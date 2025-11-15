@@ -25,6 +25,8 @@ My work focuses on transforming **real-world threat intelligence** into **defens
 
 My GitHub portfolio contains **production-ready detection rules**, **pivot matrices**, **TTP breakdowns**, and **campaign-level CTI analysis** designed to support SOC, IR, and threat hunting teams.
 
+This is a WORK IN PROGRESS and I contribute to it daily.
+
 ---
 
 ## Core Focus Areas
