@@ -37,7 +37,7 @@ This is a WORK IN PROGRESS and I contribute to it daily.
 • Threat Hunting (identity abuse, LOLBins, persistence, C2)
 • Incident Response (triage, correlation, containment)
 • Supply-Chain & RCE Attack Modeling (SolarWinds, 3CX, F5, NotPetya)
-• Python-based CTI automation and IOC processing
+• STIX/TAXII/JSON-based CTI automation and IOC processing
 
 
 ---
@@ -73,7 +73,7 @@ Projects include modelling and detection coverage for:
 • NotPetya (M.E.Doc)
 • F5 BIG-IP RCE Chain
 
-
+---
 Each includes:
 - MITRE TTP mapping  
 - Native vs custom rule coverage comparisons  
