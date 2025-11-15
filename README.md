@@ -85,7 +85,7 @@ Each includes:
 # What I Work On Right Now
 
 Each includes:
-- MITRE TTP mapping  
+- MITRE TTP mapping - Rule Tuning Project (Released soon) 
 - Native vs custom rule coverage comparisons  
 - Telemetry breakdowns  
 - Enriched CTI findings  
@@ -97,9 +97,9 @@ Each includes:
 # What I Work On Right Now
 • AI-driven TTP mutation & polymorphic malware behaviour
 • Agentless / network-based detection for cloud identity attacks
-• OAuth, consent grant, and browser token abuse modelling
-• RCE chain detection aligned to modern enterprise stacks
-• Behavioural-level hunting logic for stealthy persistence
+• OAuth, consent grant, and browser token abuse modelling + other threat modellelling of relavent TTP's
+• RCE chain detection aligned to modern enterprise stacks (Amongst the most dangerous attack vectors)
+• Behavioural-level hunting logic for stealthy persistence + confidence scoring and kill chain sequencing
 
 
 ---
