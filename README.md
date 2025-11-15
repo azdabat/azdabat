@@ -96,7 +96,7 @@ Each includes:
 
 ---
 
-# What I Work On Right Now
+# Projects In The Pipeline
 • AI-driven TTP mutation & polymorphic malware behaviour
 • Agentless / network-based detection for cloud identity attacks
 • OAuth, consent grant, and browser token abuse modelling + other threat modellelling of relavent TTP's
