@@ -101,20 +101,6 @@ Each includes:
 • RCE chain detection aligned to modern enterprise stacks (Amongst the most dangerous attack vectors)
 • Behavioural-level hunting logic for stealthy persistence + confidence scoring and kill chain sequencing
 
-
----
-
-# “Tech Stack” 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=azdabat&show_icons=true&theme=tokyonight&hide=stars,issues&hide_rank=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=azdabat&layout=compact&theme=tokyonight&custom_title=Core%20Tools%20%28Detection%20%26%20CTI%29&hide=javascript,html,css" />
-</p>
-
----
-
 # Contact
 **GitHub:** https://github.com/azdabat  
 **Email:** azdabat193@gmail.com  
