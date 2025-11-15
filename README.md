@@ -104,7 +104,7 @@ Each includes:
 
 ---
 
-# “Tech Stack” (Detection & Threat Intel Focus)
+# “Tech Stack” 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=azdabat&show_icons=true&theme=tokyonight&hide=stars,issues&hide_rank=true" />
 </p>
@@ -112,8 +112,6 @@ Each includes:
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=azdabat&layout=compact&theme=tokyonight&custom_title=Core%20Tools%20%28Detection%20%26%20CTI%29&hide=javascript,html,css" />
 </p>
-
-*(The above stats visually emphasise cyber tools rather than programming languages.)*
 
 ---
 
