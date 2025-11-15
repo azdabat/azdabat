@@ -37,7 +37,7 @@ This is a WORK IN PROGRESS and I contribute to it daily.
 • Threat Hunting (identity abuse, LOLBins, persistence, C2)
 • Incident Response (triage, correlation, containment)
 • Supply-Chain & RCE Attack Modeling (SolarWinds, 3CX, F5, NotPetya)
-• STIX/TAXII/JSON-based CTI automation and IOC processing
+• STIX/TAXII/JSON-based CTI automation and IOC processing + Threat Modelling
 
 
 ---
@@ -98,6 +98,7 @@ Each includes:
 
 # Projects In The Pipeline
 • AI-driven TTP mutation & polymorphic malware behaviour
+• N-Day & Zero-Day Threat Models via Honeypot TTP behavioural extraction
 • Agentless / network-based detection for cloud identity attacks
 • OAuth, consent grant, and browser token abuse modelling + other threat modellelling of relavent TTP's
 • RCE chain detection aligned to modern enterprise stacks (Amongst the most dangerous attack vectors)
