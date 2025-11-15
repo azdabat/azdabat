@@ -28,3 +28,99 @@ My GitHub portfolio contains **production-ready detection rules**, **pivot matri
 ---
 
 ## Core Focus Areas
+
+• KQL Detection Engineering (MDE + Sentinel)
+• Adversary Behaviour Analysis (MITRE ATT&CK)
+• Threat Intelligence (MISP, OpenCTI, OSINT pivoting)
+• Threat Hunting (identity abuse, LOLBins, persistence, C2)
+• Incident Response (triage, correlation, containment)
+• Supply-Chain & RCE Attack Modeling (SolarWinds, 3CX, F5, NotPetya)
+• Python-based CTI automation and IOC processing
+
+
+---
+
+# Portfolio Overview
+
+## Detection Engineering
+| Repository | Description |
+|-----------|-------------|
+| **Threat-Hunting-Rules** | High-fidelity KQL rules, ATT&CK mapped, confidence scoring + analyst directives. |
+| **MISP-TI-Rules** | CTI-enriched detection logic with campaign metadata, OSINT pivots, scoring models. |
+| **Attack-Vectors-2025** | Research on 2025+ emerging intrusion vectors and telemetry coverage gaps. |
+
+## Telemetry, Matrices & SOC Engineering
+| Repository | Description |
+|-----------|-------------|
+| **Sentinel-MDE-telemetry-matrix-Pivots** | Pivot maps, telemetry matrices, coverage modelling for SOC hunting. |
+
+## Labs, Red-Team Methodology (Professional)
+| Repository | Description |
+|-----------|-------------|
+| **Offensive-Security-Methodology** | Structured adversary-emulation workflows for defensive research. |
+| **Pen-Testing-Only** | Controlled Python tooling for lab-based TTP replication. |
+
+---
+
+# Featured Research
+### Supply-Chain & Large-Scale Intrusions  
+Projects include modelling and detection coverage for:
+
+• SolarWinds SUNBURST
+• 3CX Supply Chain Compromise
+• NotPetya (M.E.Doc)
+• F5 BIG-IP RCE Chain
+
+
+Each includes:
+- MITRE TTP mapping  
+- Native vs custom rule coverage comparisons  
+- Telemetry breakdowns  
+- Enriched CTI findings  
+- Lateral movement & persistence detection pivots  
+- Confidence weighting & scoring logic  
+
+---
+
+# What I Work On Right Now
+
+Each includes:
+- MITRE TTP mapping  
+- Native vs custom rule coverage comparisons  
+- Telemetry breakdowns  
+- Enriched CTI findings  
+- Lateral movement & persistence detection pivots  
+- Confidence weighting & scoring logic  
+
+---
+
+# What I Work On Right Now
+• AI-driven TTP mutation & polymorphic malware behaviour
+• Agentless / network-based detection for cloud identity attacks
+• OAuth, consent grant, and browser token abuse modelling
+• RCE chain detection aligned to modern enterprise stacks
+• Behavioural-level hunting logic for stealthy persistence
+
+
+---
+
+# “Tech Stack” (Detection & Threat Intel Focus)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=azdabat&show_icons=true&theme=tokyonight&hide=stars,issues&hide_rank=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=azdabat&layout=compact&theme=tokyonight&custom_title=Core%20Tools%20%28Detection%20%26%20CTI%29&hide=javascript,html,css" />
+</p>
+
+*(The above stats visually emphasise cyber tools rather than programming languages.)*
+
+---
+
+# Contact
+**GitHub:** https://github.com/azdabat  
+**Email:** azdabat193@gmail.com  
+**Location:** United Kingdom  
+
+<p align="center"><i>“Intelligence-driven detection engineering — translating adversary behaviour into measurable defensive depth.”</i></p>
+
