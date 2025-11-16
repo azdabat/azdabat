@@ -25,7 +25,7 @@ My work focuses on transforming **real-world threat intelligence** into **defens
 
 My GitHub portfolio contains **production-ready detection rules**, **pivot matrices**, **TTP breakdowns**, and **campaign-level CTI analysis** designed to support SOC, IR, and threat hunting teams.
 
-This is a WORK IN PROGRESS and I contribute to it daily.
+IMPORTANTl This is a WORK IN PROGRESS and I contribute to it daily. There are PLACEHOLDERS in some sections due to automated ingestion. Changes are being made to correct and enrich this valuable source for Threat Hunters, SOC Analysts L2-L3 and Threat Intelligence Analysts. I have some Red-Teaming projects but these are a requirments for true Threat/SOC/Hunters/Engineers to understand how attacks are actually carried out. 
 
 ---
 
