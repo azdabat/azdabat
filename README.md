@@ -60,6 +60,7 @@ My GitHub portfolio contains **production-ready detection rules**, **pivot matri
 | Repository | Description |
 |-----------|-------------|
 | **Offensive-Security-Methodology** | Structured adversary-emulation workflows for defensive research. |
+| **Threat Hunting Red-Team Playbooks** | An A-Z of MITRE attack vectors 2023-2025 of Red-Team and hacker activity and hunts as well as organizational size rule configurations |
 | **Pen-Testing-Only** | Controlled Python tooling for lab-based TTP replication. |
 
 ---
