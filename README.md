@@ -15,16 +15,22 @@
 ---
 
 ## About Me
-I am a senior cyber security analyst specialising in **intelligence-led detection engineering**, adversary simulation, and high-fidelity threat hunting across both endpoint and cloud attack surfaces.
+I’m a senior cyber security analyst specialising in **intelligence-led detection engineering**, high-fidelity **threat hunting**, and **incident response** across modern enterprise environments.
+
+My focus is on transforming **real adversary tradecraft** into **production-grade detection rules**, A few examples:
+
+- Behaviour-first KQL / LQL engineering  
+- MITRE-aligned threat modelling  
+- CTI enrichment from MISP + OpenCTI  
+- Supply-chain attack replication and detection (3CX, SolarWinds, F5, NotPetya)  
+- Identity attacks: OAuth consent, cloud tokens, persistence  
+- Driver-level abuse (BYOVD), DLL sideloading  
+- C2 detection using jitter, timing analysis, and rare-port telemetry
+- Evolving threat landscape and threat intelligence modeling and hunting
+- Red-teaming, Pentesting playbooks and real-world attack vectors
+- etc...
 
 My work focuses on transforming **real-world threat intelligence** into **defensive depth**, using MITRE-aligned TTP modelling, telemetry mapping, and high-signal rule logic. I build end-to-end artefacts that combine:
-
-- KQL & Falcon LQL detection engineering  
-- ATT&CK-based threat modelling  
-- MISP/OpenCTI enrichment pipelines  
-- Supply-chain intrusion replication (SolarWinds, 3CX, NotPetya, F5 BIG-IP)  
-- Identity & OAuth abuse detection  
-- DLL sideloading, driver abuse (BYOVD) & component-level persistence  
 
 My GitHub portfolio contains **production-ready detection rules**, **pivot matrices**, **TTP breakdowns**, and **campaign-level CTI analysis** designed to support SOC, IR, and threat hunting teams.
 ---
@@ -44,24 +50,54 @@ My GitHub portfolio contains **production-ready detection rules**, **pivot matri
 
 # Portfolio Overview
 
-## Detection Engineering
-| Repository | Description |
-|-----------|-------------|
-| **Threat-Hunting-Rules** | High-fidelity KQL rules, ATT&CK mapped, confidence scoring + analyst directives. |
-| **MISP-TI-Rules** | CTI-enriched detection logic with campaign metadata, OSINT pivots, scoring models. |
-| **Attack-Vectors-2025** | Research on 2025+ emerging intrusion vectors and telemetry coverage gaps. |
+### Threat Intelligence
+- Campaign tracking & infrastructure mapping  
+- OSINT enrichment workflows (domain/IP clustering, VT/PassiveDNS pivoting)  
+- MISP/OpenCTI integration  
+- MITRE ATT&CK heatmaps & coverage reports  
 
-## Telemetry, Matrices & SOC Engineering
-| Repository | Description |
-|-----------|-------------|
-| **Sentinel-MDE-telemetry-matrix-Pivots** | Pivot maps, telemetry matrices, coverage modelling for SOC hunting. |
+### Threat Hunting & IR
+- Endpoint + cloud correlation (MDE, Sentinel)  
+- Lateral movement detection  
+- Credential theft analysis  
+- Post-exploitation pivots  
+- Kill-chain reconstruction  
 
-## Labs, Red-Team Methodology (Professional)
+### Research / Adversary Simulation
+- Red-team technique replication across MITRE  
+- BYOVD / sideloading lab work  
+- AI-assisted polymorphic malware behaviour modelling  
+- RCE chain mapping (modern enterprise stacks)
+
+---
+
+# Portfolio Structure
+
+## 1. **Detection Engineering (Core Work)**
 | Repository | Description |
 |-----------|-------------|
-| **Offensive-Security-Methodology** | Structured adversary-emulation workflows for defensive research. |
-| **Threat Hunting Red-Team Playbooks** | An A-Z of MITRE attack vectors 2023-2025 of Red-Team and hacker activity and hunts as well as organizational size rule configurations |
-| **Pen-Testing-Only** | Controlled Python tooling for lab-based TTP replication. |
+| **Threat-Hunting-Rules** | High-fidelity KQL logic aligned to MITRE, with scoring and analyst directives. |
+| **LOLBins-Evasion-Pack** | AMSI bypass + LSASS + encoded PowerShell + in-memory loaders. |
+| **C2-Detection-Pack** | Suspicious ports, hybrid jitter analysis, periodic beacon detection, service attribution. |
+| **Supply-Chain-Detection** | DLL sideloading, driver abuse, dormant loaders, component hijacking. |
+
+## 2. **Threat Intelligence & CTI-Driven Engineering**
+| Repository | Description |
+|-----------|-------------|
+| **MISP/OpenCTI Integration** | TI-driven enrichment, scoring, campaign metadata, infra clustering. |
+| **Attack-Vectors-2025** | Analysis of emerging intrusion TTPs for 2025+: supply-chain, AI-mutating malware, stealth persistence. |
+
+## 3. **SOC Telemetry & Pivot Frameworks**
+| Repository | Description |
+|-----------|-------------|
+| **Sentinel-MDE-Telemetry-Matrix** | Coverage maps, pivot tables, event-source mapping for systematic hunting. |
+
+## 4. **Red-Team / Adversary Modelling**
+| Repository | Description |
+|-----------|-------------|
+| **Threat-Hunting Red-Team Playbooks & Modern Hacking Methods** | MITRE ATT&CK A–Z with detection paths, pivot logic, and enterprise tuning. |
+| **Offensive-Security-Methodology** | Structured adversary-emulation process for replication of modern breaches. |
+
 
 ---
 
