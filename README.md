@@ -93,7 +93,8 @@ Each includes:
 - Telemetry breakdowns  
 - Enriched CTI findings  
 - Lateral movement & persistence detection pivots  
-- Confidence weighting & scoring logic  
+- Confidence weighting & scoring logic
+- Red-Team/Hacker A-Z threat hunting playbook
 
 ---
 
