@@ -9,6 +9,9 @@
   <strong>Detection Engineering • Threat Intelligence • Adversary Behaviour • KQL • MDE • Sentinel • Falcon LQL</strong>
 </p>
 
+> [!NOTE]
+> **Placeholders currently exist and rules are constantly being tuned for production ready servers. This project is in it's early days, and completion will be finished shortly. For the most part everything works.**
+
 ---
 
 ## About Me
