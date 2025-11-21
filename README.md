@@ -2,7 +2,7 @@
   <img src="https://static.vecteezy.com/system/resources/previews/043/410/734/non_2x/concept-of-private-key-or-cyber-security-graphic-of-electronic-pattern-texured-key-with-futuristic-element-vector.jpg" width="650">
 </p>
 
-<h1 align="center">Al Dabat</h1>
+<h1 align="center">Ala Dabat</h1>
 <h3 align="center">Senior SOC / Incident Response / Threat Intelligence Analyst</h3>
 
 <p align="center">
