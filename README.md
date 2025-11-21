@@ -10,7 +10,7 @@
 </p>
 
 > [!NOTE]
-> **This project is in its early, active development phase. The core functionality is robust and working well. Current efforts are focused on completing modular components, replacing initial integration placeholders, and iteratively optimizing performance and configuration rules. A production-ready release is targeted for completion in the early November. The MISP-Project and Threat Hunting Rules are all my own as are the LOLBINS and should already be complete and ready (although they too will be updated accordingly) , also projects such as future AI-Attacks and Polymorphic modules are in essence also complete**
+> **This project is in its early, active development phase. The core functionality is robust and working well. Current efforts are focused on completing modular components, replacing initial integration placeholders, and iteratively optimizing performance and configuration rules. A production-ready release is targeted for completion in the early November. The MISP-Project and Threat Hunting Rules are all my own as are the LOLBINS and should already be complete and ready (although they too will be updated accordingly) , also projects such as future AI-Attacks and Polymorphic modules are in essence also "complete" but is an evolving project**
 
 ---
 
