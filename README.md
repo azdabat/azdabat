@@ -10,7 +10,7 @@
 </p>
 
 > [!NOTE]
-> **This project is in its early, active development phase. The core functionality is robust and working well. Current efforts are focused on completing modular components, replacing initial integration placeholders, and iteratively optimizing performance and configuration rules. A production-ready release is targeted for completion in [Insert Specific Date/Quarter, e.g., Q1 2026].**
+> **This project is in its early, active development phase. The core functionality is robust and working well. Current efforts are focused on completing modular components, replacing initial integration placeholders, and iteratively optimizing performance and configuration rules. A production-ready release is targeted for completion in [Insert Specific Date/Quarter, e.g., Q1 2026]. However MISP-Project and Threat Hunting Rules are all my own and should already be complete and ready, also projects such as future AI-Attacks and Polymorphic modules are in essence also complete**
 
 ---
 
@@ -27,10 +27,6 @@ My work focuses on transforming **real-world threat intelligence** into **defens
 - DLL sideloading, driver abuse (BYOVD) & component-level persistence  
 
 My GitHub portfolio contains **production-ready detection rules**, **pivot matrices**, **TTP breakdowns**, and **campaign-level CTI analysis** designed to support SOC, IR, and threat hunting teams.
-
-> [!NOTE]
-> **Placeholders currently exist and rules are constantly being tuned for production ready servers. This project is in it's early days, and completion will be finished shortly. For the most part everything works.This is a WORK IN PROGRESS and I contribute to it daily. There are PLACEHOLDERS in some sections due to automated ingestion. Changes are being made to correct and enrich this valuable source for Threat Hunters, SOC Analysts L2-L3 and Threat Intelligence Analysts. I have some Red-Teaming projects but these are a requirments for true Threat/SOC/Hunters/Engineers to understand how attacks are actually carried out. So some sections are incomplete with place holders, and rules are constantly being fine tuned. This is a new repo and requires hours of work and going over rule logic.**
-
 ---
 
 ## Core Focus Areas
