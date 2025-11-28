@@ -10,7 +10,7 @@
 </p>
 
 > [!NOTE]
-> **This project is in its early, active development phase. The core functionality is robust and working well. Current efforts are focused on completing modular components, replacing initial integration placeholders, and iteratively optimizing performance and configuration rules. A production-ready release is targeted for completion early next year. The MISP-Project and Threat Hunting Rules are all my own as are the LOLBIN but is and evolving project that need production testing (soon to deploy lab)**
+> **This project is in its early, active development phase. The core functionality is robust and working well. Current efforts are focused on completing modular components, replacing initial integration placeholders, and iteratively optimizing performance and configuration rules. A production-ready release is targeted for completion early next year. This is an evolving project that needs production testing (soon to deploy)**
 
 ---
 
