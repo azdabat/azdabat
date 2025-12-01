@@ -9,36 +9,38 @@
   <strong>Detection Engineering • Threat Intelligence • Adversary Behaviour • KQL • MDE • Sentinel • Falcon LQL</strong>
 </p>
 
-> [!NOTE]
-> This portfolio is in active development. Core components are functional, with additional modules, tuning, and integration work scheduled for completion early next year. Some rules require validation in production-grade environments as part of ongoing refinement.
+> **Note**  
+> This portfolio is active and evolving. Core logic is complete and functional, with further tuning, new hunts, and additional coverage being added incrementally. Many rules have already been redesigned for low-noise, high-signal production alignment.
 
 ---
 
-## About Me
-I specialise in intelligence-led detection engineering, threat hunting, adversary behaviour analysis, and incident response across enterprise environments. My work focuses on transforming real intrusion tradecraft into structured defensive controls and high-fidelity detections.
+# About Me
 
-Areas I work on:
-- Behaviour-driven KQL / LQL rule engineering  
-- MITRE ATT&CK threat modelling and kill-chain mapping  
-- CTI-enriched detection logic (MISP, OpenCTI)  
-- Supply-chain attack replication and detection (SolarWinds, 3CX, F5, NotPetya)  
-- Identity-driven attacks (OAuth consent, token abuse, cloud persistence)  
-- BYOVD, DLL sideloading, driver drift analysis  
-- C2 detection (jitter, timing patterns, rare-port telemetry)  
-- Red-team technique replication & modern attack vectors  
+I specialise in **intelligence-led detection engineering**, advanced **threat hunting**, and **adversary behaviour analysis** across enterprise cloud and endpoint environments. My work focuses on taking real-world intrusion tradecraft and converting it into **structured, repeatable, high-fidelity detections**.
 
-My GitHub work aims to provide practical, production-aligned artefacts: rulepacks, detection matrices, pivot tables, and structured threat-hunting frameworks that can be used directly by SOC and IR teams.
+Areas I actively work on include:
+
+- Behaviour-driven KQL / LQL rule design  
+- MITRE ATT&CK mapping and kill-chain modelling  
+- Identity-based attack detection (OAuth abuse, legacy protocol misuse, token theft)  
+- Supply-chain attack modelling (SolarWinds, 3CX, F5, NotPetya)  
+- DLL/driver sideloading, BYOVD, and component hijacking  
+- C2 beaconing detection via timing, jitter, process lineage, and rare-path signals  
+- Threat Intelligence ingestion (MISP/OpenCTI) and enrichment design  
+- Incident response reconstruction and adversary pivot analysis  
+
+This repository is structured to provide **operationally useful detection artefacts**: rulepacks, scoring frameworks, MITRE mappings, pivot guides, and hunter-friendly triage notes.
 
 ---
 
-## Core Focus Areas
-• KQL detection engineering (MDE / Sentinel)  
-• Adversary tradecraft & MITRE ATT&CK mapping  
-• MISP / OpenCTI-driven enrichment workflows  
-• Threat hunting (identity, persistence, LOLBins, lateral movement, C2)  
-• Incident response and kill-chain reconstruction  
-• Supply-chain modelling and detection engineering  
-• STIX/TAXII ingestion, IOC processing, campaign analysis  
+# Core Focus Areas
+
+- Endpoint + Cloud detection engineering (MDE / Sentinel)  
+- Adversary tradecraft modelling  
+- Threat Intelligence workflows (MISP, OpenCTI, STIX/TAXII)  
+- High-confidence, low-noise hunts covering persistence, identity, C2, and lateral movement  
+- Incident response and attack-path reconstruction  
+- Red-team TTP replication to validate defensive coverage  
 
 ---
 
@@ -46,92 +48,60 @@ My GitHub work aims to provide practical, production-aligned artefacts: rulepack
 
 ## Threat Intelligence
 - Campaign and infrastructure mapping  
-- OSINT enrichment workflows (DNS, VT, passive data)  
-- MISP/OpenCTI integration pipelines  
-- MITRE ATT&CK heatmaps and coverage analysis  
+- IOC/indicator processing pipelines  
+- Correlation and confidence scoring logic  
+- MITRE ATT&CK coverage heatmaps  
 
 ## Threat Hunting & Incident Response
-- Endpoint + cloud telemetry correlation  
-- Lateral movement detection  
-- Credential theft and LSASS-access analysis  
-- Post-exploitation pivot mapping  
-- Reconstruction of attacker kill chains  
+- Endpoint/cloud telemetry correlation  
+- Credential theft analysis (LSASS, DPAPI, NTDS)  
+- Lateral movement, SMB/WinRM/AD abuse  
+- Kill-chain reconstruction and reporting  
 
-## Research / Adversary Simulation
-- Red-team TTP replication  
-- BYOVD and sideloading analysis  
-- Behaviour modelling of polymorphic malware  
-- Mapping of modern RCE chains  
-
----
-
-# Portfolio Structure
-
-## 1. Detection Engineering (Core Work)
-| Repository | Description |
-|-----------|-------------|
-| **Threat-Hunting-Rules** | High-fidelity KQL rules aligned to MITRE with scoring models and analyst directives. |
-| **LOLBins-Evasion-Pack** | LSASS access, AMSI bypass patterns, encoded PS, loader behaviours. |
-| **C2-Detection-Pack** | Rare-port telemetry, jitter analysis, periodic beacons, service attribution. |
-| **Supply-Chain-Detection** | DLL drift, driver tampering, dormant-loader detection, component hijack logic. |
-
-## 2. Threat Intelligence & CTI-Driven Engineering
-| Repository | Description |
-|-----------|-------------|
-| **MISP/OpenCTI Integration** | TI-based scoring, IOC clustering, campaign metadata enrichment. |
-| **Attack-Vectors-2025** | Analysis of developing intrusion techniques: supply-chain vectors, AI-driven mutation, stealth persistence. |
-
-## 3. SOC Telemetry & Pivot Frameworks
-| Repository | Description |
-|-----------|-------------|
-| **Sentinel-MDE-Telemetry-Matrix** | Event maps, detection surfaces, and pivot tables for systematic hunting. |
-
-## 4. Adversary Modelling
-| Repository | Description |
-|-----------|-------------|
-| **Red-Team Playbooks (MITRE end-to-end)** | Detection paths, pivot logic, mitigation strategies. |
-| **Offensive-Security-Methodology** | Structured process for adversary emulation across enterprise stacks. |
+## Research & Adversary Simulation
+- Supply-chain intrusion modelling  
+- DLL/driver sideloading and BYOVD behaviour analysis  
+- C2 timing, jitter, and protocol studies  
+- Polymorphic malware behaviour profiling  
 
 ---
 
-# Featured Research
+# Repository Structure
 
-## Supply-Chain Intrusions  
-Detection modelling and analysis for:
-- SolarWinds SUNBURST  
-- 3CX  
-- NotPetya (M.E.Doc)  
-- F5 BIG-IP RCE chain  
+This portfolio is divided into several practical components used by SOC, IR, and TI teams:
 
-Each includes:
-- MITRE TTP mapping  
-- Native vs custom detection coverage  
-- Telemetry breakdowns  
-- TI enrichment  
-- Lateral-movement and persistence pivots  
-- Scoring and kill-chain sequencing  
+## 1. Detection Engineering (Primary Work)
+High-fidelity KQL rules aligned to MITRE with:
+- Confidence scoring  
+- Signal weighting  
+- Kill-chain classification  
+- Hunter directives  
+- Native-only and hybrid TI/CTI variants  
 
----
+Rules are structured for **real-world analyst use**, not academic demonstrations.
 
-# Current Work
-- MITRE-aligned rule tuning framework (release soon)  
-- Telemetry-driven supply-chain logic  
-- Extended pivot matrices for identity, persistence, lateral movement  
-- Red-team / attacker-technique A-Z hunting playbook  
+Repository: **Threat-Hunting-Rules**  
+https://github.com/azdabat/Threat-Hunting-Rules
 
 ---
 
-# Pipeline Work
-• AI-based TTP mutation modelling  
-• Honeypot-driven behavioural extraction for N-day/zero-day profiling  
-• Identity-centric agentless detections  
-• OAuth and token-abuse detection models  
-• RCE chain modelling for modern enterprise stacks  
-• Behavioural persistence hunting with weighted scoring systems  
+# Roadmap (In Progress)
+
+The following areas are actively expanding as part of the November–January development cycle:
+
+- Final tuning of supply-chain / sideloading / driver rules  
+- Completion of OAuth / identity abuse detection pack  
+- NTDS / DCSync native correlation pack  
+- Jitter-based C2 detection improvements  
+- Baseline models for known-good processes and publishers  
+- Integrated “quick-start” hunt guide and MITRE coverage matrix  
+
+Each module is being iterated and hardened based on production environments and current 2024–2025 intrusion trends.
 
 ---
 
 # Contact
+
 **GitHub:** https://github.com/azdabat  
 **Email:** azdabat193@gmail.com  
 **Location:** United Kingdom  
