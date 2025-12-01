@@ -206,6 +206,46 @@ This repository is intentionally iterative. Each week I refine:
 
 This mirrors real-world detection engineering workflows.
 
+## Threat Hunting Rule Philosophy
+
+This repository contains **behaviour-driven Threat Hunting rules** designed for use by L2/L3 analysts, Incident Responders, and Threat Hunters.
+
+These are **not signature-based detections** or SOC alert rules.  
+Instead, each analytic is built to:
+
+- Identify *patterns* rather than single IOC events  
+- Map directly to **MITRE ATT&CK tactics and techniques**  
+- Support **hypothesis-driven hunting**, not passive alerting  
+- Highlight anomalies in **execution flow, persistence, lateral movement, and C2**  
+- Provide **Hunting Directives**: recommended analyst pivots and triage steps  
+- Introduce **weighted scoring** and *signal accumulation*, rather than Boolean matching  
+- Reconstruct portions of the **attack chain** from endpoint + cloud telemetry  
+- Surface *weak signals* that attackers rely on during stealthy operations  
+- Reduce uncertainty by correlating across multiple data sources (Process, File, Registry, Network)
+
+These rules intentionally prioritise **recall and behavioural depth** over precision, making them ideal for:
+
+- Weekly hunting cycles  
+- Monthly environment baselining  
+- Compromise assessments  
+- Incident response investigations  
+- Purple team exercises  
+- Detection gap analysis
+## LOLBin SOP Framework
+
+Many hunts in this repository incorporate a structured **LOLBIN (Living-Off-The-Land Binary) SOP**, which includes:
+
+- Known legitimate usage patterns  
+- Abnormal command-lines  
+- Expected parent-child relationships  
+- Registry and file system indicators  
+- Execution contexts that raise suspicion (SYSTEM, user-writable paths, unsigned binaries)  
+- Pivot guidance for each technique  
+- MITRE mappings for each LOLBin family  
+- Recommended response actions
+
+This ensures analysts can quickly distinguish *legitimate automation behaviour* from  
+*sideloading, payload staging, credential theft, or persistence mechanisms*.
 ---
 
 # Contact
