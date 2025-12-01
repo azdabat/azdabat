@@ -32,7 +32,6 @@ My focus is on transforming **real adversary tradecraft** into **production-grad
 
 My work focuses on transforming **real-world threat intelligence** into **defensive depth**, using MITRE-aligned TTP modelling, telemetry mapping, and high-signal rule logic. I build end-to-end artefacts that combine:
 
-My GitHub portfolio contains **production-ready detection rules**, **pivot matrices**, **TTP breakdowns**, and **campaign-level CTI analysis** designed to support SOC, IR, and threat hunting teams.
 ---
 
 ## Core Focus Areas
