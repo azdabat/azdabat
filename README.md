@@ -11,7 +11,7 @@
 
 > [!NOTE]  
 > This portfolio is actively evolving. Many hunts are complete and production-ready; others are being tuned, validated and expanded with scoring models, baselines, and full kill-chain mapping.  
-> The repository reflects a live engineering process, where new rules, matrices and SOPs are continuously refined against modern attack patterns.
+> The repository reflects a live engineering process, where new rules, matrices and SOPs are continuously refined against modern attack patterns. Basic hunt pack will eventually be included all in due course.
 
 ---
 
