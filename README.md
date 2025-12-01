@@ -244,8 +244,6 @@ Many hunts in this repository incorporate a structured **LOLBIN (Living-Off-The-
 - MITRE mappings for each LOLBin family  
 - Recommended response actions
 
-This ensures analysts can quickly distinguish *legitimate automation behaviour* from  
-*sideloading, payload staging, credential theft, or persistence mechanisms*.
 ---
 
 # Contact
