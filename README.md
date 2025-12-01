@@ -9,99 +9,206 @@
   <strong>Detection Engineering • Threat Intelligence • Adversary Behaviour • KQL • MDE • Sentinel • Falcon LQL</strong>
 </p>
 
-> **Note**  
-> This portfolio is active and evolving. Core logic is complete and functional, with further tuning, new hunts, and additional coverage being added incrementally. Many rules have already been redesigned for low-noise, high-signal production alignment.
+> [!NOTE]  
+> This portfolio is actively evolving. Many hunts are complete and production-ready; others are being tuned, validated and expanded with scoring models, baselines, and full kill-chain mapping.  
+> The repository reflects a live engineering process, where new rules, matrices and SOPs are continuously refined against modern attack patterns.
 
 ---
 
-# About Me
+# About This Portfolio
 
-I specialise in **intelligence-led detection engineering**, advanced **threat hunting**, and **adversary behaviour analysis** across enterprise cloud and endpoint environments. My work focuses on taking real-world intrusion tradecraft and converting it into **structured, repeatable, high-fidelity detections**.
+This repository documents my work as a detection engineer and threat hunter.  
+My focus is on **intelligence-driven detection logic** that reflects how real attackers operate, not just IOC matching.  
 
-Areas I actively work on include:
+The work here represents:
+- Behaviour-first detection engineering in KQL  
+- High-fidelity hunts with scoring, rarity analysis and baseline controls  
+- Supply-chain, identity and post-exploitation modelling  
+- LOLBins, persistence, lateral movement and C2 behaviour analysis  
+- Structured triage guidance tailored for SOC analysts  
+- End-to-end attack chain reconstruction using MITRE and custom kill-chain markers  
 
-- Behaviour-driven KQL / LQL rule design  
-- MITRE ATT&CK mapping and kill-chain modelling  
-- Identity-based attack detection (OAuth abuse, legacy protocol misuse, token theft)  
-- Supply-chain attack modelling (SolarWinds, 3CX, F5, NotPetya)  
-- DLL/driver sideloading, BYOVD, and component hijacking  
-- C2 beaconing detection via timing, jitter, process lineage, and rare-path signals  
-- Threat Intelligence ingestion (MISP/OpenCTI) and enrichment design  
-- Incident response reconstruction and adversary pivot analysis  
-
-This repository is structured to provide **operationally useful detection artefacts**: rulepacks, scoring frameworks, MITRE mappings, pivot guides, and hunter-friendly triage notes.
+The goal is simple: produce **operationally useful** detection content that SOC and IR teams can run immediately, and build it in a way hiring managers can judge clarity, reasoning and methodology.
 
 ---
 
-# Core Focus Areas
+# My Detection Engineering Methodology
 
-- Endpoint + Cloud detection engineering (MDE / Sentinel)  
-- Adversary tradecraft modelling  
-- Threat Intelligence workflows (MISP, OpenCTI, STIX/TAXII)  
-- High-confidence, low-noise hunts covering persistence, identity, C2, and lateral movement  
-- Incident response and attack-path reconstruction  
-- Red-team TTP replication to validate defensive coverage  
+## 1. Behaviour-Driven Analytics
+Rules begin by defining attacker **actions**, not strings or single events:
+- What would a real operator do at this stage?
+- What assets, privileges or telemetry footprint must they touch?
+- How do I capture the *behaviour* instead of the tool?
+
+This ensures durability against tool changes, polymorphism, and evasion.
 
 ---
 
-# Portfolio Overview
+## 2. Adversary Mapping & Threat Modelling
 
-## Threat Intelligence
-- Campaign and infrastructure mapping  
-- IOC/indicator processing pipelines  
-- Correlation and confidence scoring logic  
-- MITRE ATT&CK coverage heatmaps  
+Every hunt maps to:
+- **MITRE Tactics → Techniques → Sub-techniques**  
+- **Attack chains**: Recon → Initial Foothold → PrivEsc → Credential Access → Lateral Movement → Collection → Exfiltration
+- **Threat categories**: supply-chain, credential theft, identity abuse, RCE chains, stealth C2, persistence
 
-## Threat Hunting & Incident Response
-- Endpoint/cloud telemetry correlation  
-- Credential theft analysis (LSASS, DPAPI, NTDS)  
-- Lateral movement, SMB/WinRM/AD abuse  
-- Kill-chain reconstruction and reporting  
+Threat modelling is done using:
+- Known campaign behaviour (SolarWinds, 3CX, NotPetya, APT41, APT29, 3CX, F5, Kaseya-style supply chain)
+- TTP generalisation (DLL sideloading lifecycle, driver abuse, registry implants, ROPC abuse, OAuth consent abuse)
+- Infrastructure behaviour (jittered beacons, domain fronting, TOR relays, redirectors)
+- Tradecraft patterns: “How would I do this if I were the adversary and wanted to avoid telemetry?”
 
-## Research & Adversary Simulation
-- Supply-chain intrusion modelling  
-- DLL/driver sideloading and BYOVD behaviour analysis  
-- C2 timing, jitter, and protocol studies  
-- Polymorphic malware behaviour profiling  
+---
+
+## 3. Scoring Models & Confidence Weighting
+
+All core hunts in this repo use a scoring approach that considers:
+- Rarity  
+- Parent/child lineage  
+- Path legitimacy  
+- Signing trust  
+- Registry vs file vs network correlation  
+- Kill-chain alignment  
+- Host criticality (DC, server, exposed system)  
+
+This provides a practical **signal-to-noise ratio** and lets analysts prioritise rapidly.
+
+---
+
+## 4. Hunter Directives Framework
+
+Every rule includes short operational guidance:
+- What to check next  
+- How to pivot across telemetry  
+- What normally causes this benignly  
+- Indicators of escalation  
+- Recommendations if malicious  
+
+This is written for real SOC analysts—concise and actionable.
+
+---
+
+# LOLBins SOP Framework (Included Across Rulepacks)
+
+I maintain SOPs for all major LOLBins used in:
+- Execution  
+- Defense evasion  
+- Fileless activity  
+- Credential access  
+- Lateral movement  
+- Persistence injection  
+
+Each LOLBin entry includes:
+- Normal usage profile  
+- Abuse scenarios  
+- Related MITRE techniques  
+- Command-line artefacts  
+- Detection artefacts  
+- Recommended KQL pivots  
+- Response steps  
+
+This forms a **living library** of adversary behaviour and defensive mappings.
+
+---
+
+# MITRE ATT&CK Mapping
+
+All rules follow a uniform standard:
+- Tactics listed explicitly  
+- Techniques derived from behaviour, not guesswork  
+- Sub-techniques included when they map clearly  
+- Technique selection aligned with real tradecraft (e.g. NTDS = T1003.003 + T1552 + T1110 pivot cases)
+
+MITRE mapping is not cosmetic—it guides:
+- Kill-chain placement  
+- Scoring weighting  
+- Pivot logic  
+- Hunter directives  
+
+---
+
+# Attack Chain Modelling
+
+Many hunts explicitly identify the attack phase:
+- Initial Execution  
+- Privilege Escalation  
+- Credential Access  
+- Persistence  
+- Collection  
+- Exfiltration  
+
+Kill-chain detection improves:
+- Scoring
+- Triage priority
+- Correlation across tables
+- Timing windows for multi-step attacks  
 
 ---
 
 # Repository Structure
 
-This portfolio is divided into several practical components used by SOC, IR, and TI teams:
-
-## 1. Detection Engineering (Primary Work)
-High-fidelity KQL rules aligned to MITRE with:
-- Confidence scoring  
-- Signal weighting  
-- Kill-chain classification  
+## 1. **Threat-Hunting-Rules**
+High-fidelity KQL hunts with:
+- Scoring & confidence models  
+- Kill-chain mapping  
+- Rarity and baseline logic  
 - Hunter directives  
-- Native-only and hybrid TI/CTI variants  
+- Comprehensive MITRE mappings  
+- Native-only variants (no TI dependency)  
+- Supply-chain detection rules (DLL/driver/sideloading lifecycle)  
+- Identity-based rules (ROPC, OAuth consent, MFA bypass patterns)  
+- Jittered HTTPS beaconing / C2 timing analytics  
+- NTDS.dit and DCSync chain detection  
+- WSL PrivEsc & persistence hunts  
+- Registry persistence scoring engine  
+- LOLBins-based privilege escalation & access rules  
 
-Rules are structured for **real-world analyst use**, not academic demonstrations.
-
-Repository: **Threat-Hunting-Rules**  
-https://github.com/azdabat/Threat-Hunting-Rules
+Each rule is engineered to meet:
+- Low noise  
+- High fidelity  
+- Operational value in a SOC  
 
 ---
 
-# Roadmap (In Progress)
+# 2. **Threat Modelling & Research**
+- Campaign mapping (APT29, APT41, 3CX, F5, SolarWinds examples)  
+- Code execution chains (DLL, driver, COM hijack, IFEO)  
+- C2 infrastructure (jitter analysis, beacon timing, redirectors)  
+- BYOVD and kernel exploit patterns  
+- Identity-led intrusions  
 
-The following areas are actively expanding as part of the November–January development cycle:
+---
 
-- Final tuning of supply-chain / sideloading / driver rules  
-- Completion of OAuth / identity abuse detection pack  
-- NTDS / DCSync native correlation pack  
-- Jitter-based C2 detection improvements  
-- Baseline models for known-good processes and publishers  
-- Integrated “quick-start” hunt guide and MITRE coverage matrix  
+# 3. **Incident Response Playbooks**
+In progress:
+- NTDS exfil playbook  
+- Account compromise and token theft response  
+- DLL sideloading triage  
+- Driver abuse / BYOVD response  
 
-Each module is being iterated and hardened based on production environments and current 2024–2025 intrusion trends.
+---
+
+# Roadmap & Ongoing Work
+
+The next phase includes:
+- Enterprise baseline tuning  
+- Noise-vs-signal matrices per rule  
+- Test datasets and demo outputs  
+- MITRE coverage scoring and mapping heatmaps  
+- Automated packaging of rulepacks  
+- Red-team/Blue-team joint modelling guides  
+
+This repository is intentionally iterative. Each week I refine:
+- Field correctness  
+- Scoring weights  
+- Kill-chain logic  
+- Hunter directive clarity  
+- Noise reduction  
+
+This mirrors real-world detection engineering workflows.
 
 ---
 
 # Contact
-
 **GitHub:** https://github.com/azdabat  
 **Email:** azdabat193@gmail.com  
 **Location:** United Kingdom  
