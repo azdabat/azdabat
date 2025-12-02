@@ -243,6 +243,7 @@ Many hunts in this repository incorporate a structured **LOLBIN (Living-Off-The-
 - Pivot guidance for each technique  
 - MITRE mappings for each LOLBin family  
 - Recommended response actions
+  There will also be a project covering most attack vectors using the same SOP methadology. 
 
 ---
 
