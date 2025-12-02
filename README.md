@@ -28,7 +28,7 @@ The work here represents:
 - Structured triage guidance tailored for SOC analysts  
 - End-to-end attack chain reconstruction using MITRE and custom kill-chain markers  
 
-The goal is simple: produce **operationally useful** detection content that SOC and IR teams can run immediately, and build it in a way hiring managers can judge clarity, reasoning and methodology.
+The goal is simple: produce **operationally useful** detection content that SOC and IR teams can run immediately.
 
 ---
 
