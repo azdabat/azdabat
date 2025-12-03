@@ -160,7 +160,11 @@ High-fidelity KQL hunts with:
 - NTDS.dit and DCSync chain detection  
 - WSL PrivEsc & persistence hunts  
 - Registry persistence scoring engine  
-- LOLBins-based privilege escalation & access rules  
+- LOLBins-based privilege escalation & access rules
+- 0Auth Abuse & Detection Engineering
+- Rogue Device and Device Anomaly Unified rule
+- Polymorphic Malware Coore Hunts, L3 Engineering Rule
+  etc...
 
 Each rule is engineered to meet:
 - Low noise  
@@ -174,7 +178,8 @@ Each rule is engineered to meet:
 - Code execution chains (DLL, driver, COM hijack, IFEO)  
 - C2 infrastructure (jitter analysis, beacon timing, redirectors)  
 - BYOVD and kernel exploit patterns  
-- Identity-led intrusions  
+- Identity-led intrusions
+- Threat Lanscape 2023--> 2024 --> 2025
 
 ---
 
