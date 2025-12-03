@@ -87,7 +87,7 @@ This is written for real SOC analysts—concise and actionable.
 
 ---
 
-# LOLBins SOP Framework (Included Across Rulepacks)
+# MITRE Threat Landscape & LOLBins SOP Framework (Included Across Rulepacks)
 
 I maintain SOPs for all major LOLBins used in:
 - Execution  
