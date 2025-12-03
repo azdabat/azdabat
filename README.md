@@ -6,7 +6,7 @@
 <h3 align="center">Senior SOC / Incident Response / Threat Intelligence Analyst</h3>
 
 <p align="center">
-  <strong>Detection Engineering • Threat Intelligence • Adversary Behaviour • KQL • MDE • Sentinel • Falcon LQL</strong>
+  <strong>Detection Engineering • Threat Intelligence • Adversary Behaviour • KQL • MDE • Sentinel • Falcon LQL (later project due to testing evnvironment or lackthereof) </strong>
 </p>
 
 > [!NOTE]  
