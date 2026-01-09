@@ -41,7 +41,9 @@ I do not write 1:1 detections for individual tools (e.g., *Mimikatz* vs. *ProcDu
 2.  **Abstract:** Write a single **Composite Rule** (Sigma/KQL) that detects the behavior, not the tool hash.
 3.  **Validate:** Logic is tested against the full Atomic suite in Azure Data Explorer (ADX) to ensure <5% False Positive rates.
 
-
+### ADX Roadmap (Q1 2026)
+* **Current Status:** Endpoint Telemetry (Process/Registry/WMI etc..) is **L2.5/L3 Hardened**.
+* **Next Sprint:** Expanding coverage to **Network Correlation** (Zeek/Corelight) to detect C2 channels (e.g., Blockchain RPC beaconing) for compromised hosts.
 ---
 
 ## Core Principles
