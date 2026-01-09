@@ -29,6 +29,19 @@ The emphasis throughout this repository is on:
 
 This is **engineering work**, not academic theory.
 
+# Threat Modelling SOP: Behavioral & Patch-Resistant TTPs
+
+##  Engineering Philosophy
+This repository houses L3 "Hardened" detection logic designed for **Patch-Resistant Threats**—native Windows components (WMI, Registry, LOLBins) that adversaries abuse but cannot be blocked.
+
+###  The "Atomic Cluster" Methodology
+I do not write 1:1 detections for individual tools (e.g., *Mimikatz* vs. *ProcDump*). This leads to alert fatigue. Instead, I group Atomic Red Team tests into **Behavioral Clusters**:
+
+1.  **Cluster:** Identify the shared underlying behavior across multiple Atomics (e.g., *T1003 - LSASS Handle Access*).
+2.  **Abstract:** Write a single **Composite Rule** (Sigma/KQL) that detects the behavior, not the tool hash.
+3.  **Validate:** Logic is tested against the full Atomic suite in Azure Data Explorer (ADX) to ensure <5% False Positive rates.
+
+
 ---
 
 ## Core Principles
