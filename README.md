@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>
-    Behavioural Detection Engineering • Adversary Tradecraft • Kill-Chain Correlation • KQL • Microsoft Defender for Endpoint • Microsoft Sentinel • CrowdStrike (LQL)
+    Behavioural Detection Engineering • Adversary Tradecraft • Kill-Chain Correlation • KQL • Microsoft Defender for Endpoint • Microsoft Sentinel • CrowdStrike Falcon (LQL) Threat Hunting Rules
   </strong>
 </p>
 
