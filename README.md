@@ -25,7 +25,8 @@ The emphasis throughout this repository is on:
 - How real attackers operate in enterprise environments  
 - How detections fail in production  
 - How to design analytics that survive evasion, tooling changes, and noise  
-- How SOC analysts actually investigate incidents under pressure  
+- How SOC analysts actually investigate incidents under pressure
+- Includes Criwdstrike LQL LOLbin Hunts & Other Detections 
 
 This is **engineering work**, not academic theory.
 
