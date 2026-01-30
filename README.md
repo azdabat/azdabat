@@ -188,6 +188,20 @@ UK-based. Immediately available for:
 
 ---
 
+## Platform Portability (Elastic — Experimental Lane)
+
+While my primary engineering focus is Microsoft Sentinel/MDE,
+I am also gradually translating key Composite Detection Ecosystems into Elastic EQL.
+
+This is a slow-build portability track, starting with:
+
+- Named Pipe C2 Composite Logic
+- PowerShell Tradecraft Anchors
+- C2 Beacon Reinforcement Patterns
+
+➡️ Elastic Detection Engineering (Experimental):
+https://github.com/azdabat/Elastic---Threat-Detection-Engineering
+
 **This work is organic, tested, and built from first principles.**  
 It is designed to function in real SOC environments — not in theory.
 ---
