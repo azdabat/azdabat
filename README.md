@@ -187,17 +187,17 @@ UK-based. Immediately available for:
 - Hybrid enterprise attack coverage
 
 ---
+##  Elastic Detection Engineering (Experimental)
 
-## Platform Portability (Elastic — Experimental Lane)
+This section demonstrates the **platform portability** of my detection architecture.
 
-While my primary engineering focus is Microsoft Sentinel/MDE,
-I am also gradually translating key Composite Detection Ecosystems into Elastic EQL.
+While my primary focus remains Microsoft Sentinel/MDE, I am translating key composite detection ecosystems into Elastic EQL on a controlled cadence. The goal is to prove that the *Minimum Truth → Reinforcement → Convergence* doctrine is not tied to a single vendor.
 
-This is a slow-build portability track, starting with:
+Current starter sensors include:
+- Named Pipe C2 minimum truth + reinforcement
+- Elastic EQL translations of key behaviours
 
-- Named Pipe C2 Composite Logic
-- PowerShell Tradecraft Anchors
-- C2 Beacon Reinforcement Patterns
+This lane will grow incrementally as time permits and as the framework matures in Elastic.
 
 ➡️ Elastic Detection Engineering (Experimental):
 https://github.com/azdabat/Elastic---Threat-Detection-Engineering
