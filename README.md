@@ -20,7 +20,7 @@ This is **attack-architecture-first detection engineering**, built for real envi
 
 ## What I Deliver (Immediately)
 
-### ✅ Production-Ready Composite Detections
+###  Production-Ready Composite Detections
 Rules designed to survive:
 
 - attacker tradecraft evolution  
@@ -120,17 +120,17 @@ Detection is incomplete without analyst action.
 
 ## Repository Structure
 
-### ✅ Production Composite Rules
+###  Production Composite Rules
 **Copy-paste deployable hunts**
 
 - `Production-READY-Composite-Threat-Hunting-Rules/`
 
-### 🧪 Attack Ecosystem POCs
+###  Attack Ecosystem POCs
 Experimental chains parked for expansion:
 
 - `Attack-Ecosystems-and-POC/`
 
-### 📐 Threat Modelling + SOP Logic
+###  Threat Modelling + SOP Logic
 Behaviour-first engineering documentation:
 
 - `THREAT-MODELLING-SOP-Behavioural-Patch-Resistant-TTPs-/`
