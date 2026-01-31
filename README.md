@@ -101,18 +101,19 @@ Detection is incomplete without analyst action.
 
 ---
 
-## Current Coverage (Tier-1 Enterprise Attack Ecosystems)
+## Current Coverage (Tier-1 Enterprise Attack Ecosystems) 
+**This is Sample Data Only - Repository contains additional rules and Complete Roadmap**
 
 | Ecosystem | Minimum Truth Sensor | Status | Maturity |
 |----------|----------------------|--------|----------|
 | Registry Persistence (Autoruns) | Run/RunOnce ValueSet | ✅ Tested | HIGH |
-| Registry Hijacks (COM/IFEO/AppInit) | Execution Flow Interception | ⚠️ Partial | MED |
+| Registry Hijacks (COM/IFEO/AppInit) | Execution Flow Interception | ✅ Tested | MED |
 | Scheduled Tasks (CLI) | `schtasks.exe /create` Truth | ✅ Tested | HIGH |
 | Scheduled Tasks (Silent TaskCache) | TaskCache Registry Truth | ⚠️ Tuned | MED |
 | SMB + Service Lateral Movement | `services.exe` spawn + SMB inbound | ✅ Empire Validated | HIGH |
 | SMB + Scheduled Task Execution (Cousin Rule) | `svchost(Schedule)` spawn + artefacts | ⚠️ POC | MED |
-| Credential Access (LSASS) | Dump primitives / access truth | ⚠️ In Progress | MED |
-| NTDS / SAM Extraction | Hive/NTDS interaction truth | ⚠️ Partial | MED |
+| Credential Access (LSASS) | Dump primitives / access truth | ✅ Tested | MED |
+| NTDS / SAM Extraction | Hive/NTDS interaction truth | ✅ Tested| MED |
 | OAuth Consent Abuse | Scope grant + baseline deviation | ✅ Strong | HIGH |
 | Named Pipe C2 + Lateral Correlation | Pipe rarity + SMB + service convergence | ⚠️ Advanced POC | MED |
 
