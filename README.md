@@ -102,7 +102,7 @@ Detection is incomplete without analyst action.
 ---
 
 ## Current Coverage (Tier-1 Enterprise Attack Ecosystems) 
-**This is Sample Data Only - Repository contains additional rules and Complete Roadmap**
+**This is Sample Data Only - Repository contains additional rules and Complete Roadmap and a three Tier system**
 
 | Ecosystem | Minimum Truth Sensor | Status | Maturity |
 |----------|----------------------|--------|----------|
