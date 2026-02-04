@@ -200,12 +200,34 @@ Current starter sensors include:
 
 This lane will grow incrementally as time permits and as the framework matures in Elastic.
 
-➡️ Elastic Detection Engineering (Experimental):
+ Elastic Detection Engineering (Experimental):
 https://github.com/azdabat/Elastic---Threat-Detection-Engineering
 
 **This work is organic, tested, and built from first principles.**  
 It is designed to function in real SOC environments — not in theory.
 ---
+#  Next Step: The Attack Ecosystem ATLAS
+
+While this repository provides the **tactical sensors** (the KQL code and logic), understanding how these sensors fit together requires a strategic map.
+
+We have moved the architectural blueprints, ecosystem mappings, and "Cousin Rule" relationships into a dedicated strategic repository: **The ATLAS**.
+
+### Why You Need The ATLAS
+The Framework provides the **Micro-View** (Rule Logic):
+* *How do I detect Scheduled Task abuse?*
+* *What is the Minimum Truth for a Run Key?*
+
+The ATLAS provides the **Macro-View** (Ecosystem Strategy):
+* *How does the Scheduled Task rule relates to its "Cousin" in Registry Persistence?*
+* *Which rules form the complete "Lateral Movement" ecosystem?*
+* *How do I deploy these composites to cover an entire attack surface without gaps?*
+
+###  Access The ATLAS
+To visualize the relationships between these rules and see the full "Periodic Table" of Composite Hunts, proceed to the ATLAS:
+
+**[➡️ Enter The ATLAS: The Strategic Map of Attack Ecosystems](https://github.com/azdabat/ATLAS-ATTACK-ECOSSYSTEM)**
+
+> *Refer specifically to the [Simplified Ecosystem Map](https://github.com/azdabat/ATLAS-ATTACK-ECOSSYSTEM/blob/main/Simplified_ATLAS_Attack_Ecosystems.md) for the high-level architecture.*
 
 ## Contact
 
