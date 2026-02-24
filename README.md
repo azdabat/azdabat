@@ -5,6 +5,23 @@
 
 I build **production-grade behavioural detection logic** for modern enterprise attack chains.
 
+> **⚠️ Repository Maturity Notice**
+>
+> This repository reflects iterative detection engineering research and architectural evolution.
+>
+> Only rules within the **ADX-Composite-Framework** section should be considered production-grade.
+> These rules:
+> - Follow the Minimum Truth → Reinforcement → Noise Suppression → Scoring methodology
+> - Have been tested in ADX (Azure Data Explorer)
+> - Include validation receipts
+>
+> All other rules are part of an active test pipeline and may represent:
+> - Proof-of-Concept (POC) research
+> - Threat modelling drafts
+> - Emerging threat detections pending validation
+>
+> Unless explicitly marked as ADX-validated with receipts, rules should be treated as in-progress engineering artefacts.
+
 My work focuses on:
 
 - **Threat hunting that scales**
