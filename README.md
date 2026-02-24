@@ -118,7 +118,7 @@ Detection is incomplete without analyst action.
 
 ---
 
-## Current Coverage (Tier-1 Enterprise Attack Ecosystems) 
+## Current Coverage (Tier-1 Enterprise Attack Ecosystems sample roadmap)
 **This is Sample Data Only - Repository contains additional rules and Complete Roadmap and a three Tier system**
 
 | Ecosystem | Minimum Truth Sensor | Status | Maturity |
@@ -138,10 +138,10 @@ Detection is incomplete without analyst action.
 
 ## Repository Structure
 
-###  Production Composite Rules
-**Copy-paste deployable hunts**
+### ADX-Tested-Composite-Rules
+**Framework Based Detection Logic**
 
-- `Production-READY-Composite-Threat-Hunting-Rules/`
+- `ADX-Tested-Composite-Threat-Hunting-Rules/`
 
 ###  Attack Ecosystem POCs
 Experimental chains parked for expansion:
@@ -168,6 +168,7 @@ Example directive:
 
 > CRITICAL: SMB lateral movement via service execution.  
 > Validate service binary path, pivot source IP, scope for PsExec/Impacket tooling across fleet.
+> A rule is not considered tested unless they show receipts from ADX-Testing and screenshot outputs
 
 ---
 
