@@ -29,8 +29,6 @@ My work focuses on:
 - **Baseline truth → Reinforcement → Confidence scoring**
 - **SOC-ready outputs with embedded analyst directives**
 
-This is not IOC spam or shallow allowlists.
-
 This is **attack-architecture-first detection engineering**, built for real environments.
 
 ---
