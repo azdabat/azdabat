@@ -151,6 +151,37 @@ Each article maps the full attack chain from the offensive side, dissects the de
 
 ---
 
+### 05 · ATT&CK Substrate Adjacency — Detection Coverage Beyond Technique Taxonomy
+
+> *"ATT&CK tells you what technique the attacker used. Substrate Adjacency tells you which three techniques they will pivot to when you detect the first one."*
+
+MITRE ATT&CK models attacker behaviour **vertically** — tactic → technique → sub-technique. What it does not model is **horizontal adjacency between techniques operating on different substrates**. An adversary blocked on SMB pivots instantly to WinRM, then DCOM, then WMI. Each is a separate ATT&CK technique. All represent the same adversary intent. Detecting one while missing the others is not coverage — it is a **Coverage Illusion**.
+
+This document introduces **Substrate Adjacency** — the missing horizontal layer that sits on top of ATT&CK. It formalises the **Cousin Technique Doctrine**: the principle that adjacent techniques sharing the same adversary intent require separate, purpose-built sensors deployed as an ecosystem, with the incident layer stitching cousin surface fires into a unified attack narrative.
+
+**Covers:** Coverage Illusion · Cousin Technique Doctrine · Lateral Movement, Persistence, Execution, Credential Access, and Defense Evasion ecosystems mapped with cousin surfaces · Coverage Maturity Model (Level 0–4) · Integration with the Minimum Truth Framework layers
+
+📄 **[ATT&CK_Substrate_Adjacency.md](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/blob/main/ATT%26CK_Substrate_Adjacency.md)**
+
+---
+
+### 06 · SilverFox / ValleyRAT — BYOVD vs Polymorphic Malware: Why Signatures Fail and Behaviour Wins
+
+> *"SilverFox does not exploit a zero-day. It exploits the trust Windows places in signed binaries. The signature is the weapon."*
+
+SilverFox and ValleyRAT represent a category of Chinese-nexus threat actor tradecraft that weaponises Windows driver trust to achieve kernel-level EDR blinding before any overtly malicious activity occurs. The attack uses **byte-flipping mutation** — flipping a single non-authenticated byte in a legitimate signed driver's PE header. The file hash changes. The digital signature remains valid. Every hash-based IOC, every VirusTotal lookup, every blocklist fails silently.
+
+This document delivers a complete offensive and defensive breakdown of the BYOVD chain: from fake installer delivery through DLL sideloading, driver staging, kernel service registration, EDR blinding, and ValleyRAT C2 establishment. It contrasts the byte-flipping technique against classical polymorphic malware to explain precisely why signature-based controls fail and why **behavioural composite detection is the only viable defence**.
+
+**Covers:** Byte-flipping vs polymorphism technical comparison · Full kill chain with offensive perspective · Three-tier detection architecture (Atomic → Core+ → Advanced Kill-Chain) · MITRE ATT&CK mapping · Behavioural IOC catalogue · Validation and testing matrix · Full IR lifecycle
+
+📄 **[SilverFox-BYOVD-Vs-Polymorphic-Malware-README.md](https://github.com/azdabat/Novel-Tradecraft-Research-Emerging-Attack-Ecosystems/blob/main/SilverFox-BYOVD-Vs-Polymorphic-Malware-README.md)**
+
+---
+
+
+---
+
 ## Current Detection Coverage
 
 > ⚠️ **Maturity notice:** Only rules in `ADX-Tested-Composite-Rules/` are production-grade with ADX validation receipts. All other rules are active research pipeline — treat as engineering artefacts until receipts are present.
