@@ -177,6 +177,20 @@ This document delivers a complete offensive and defensive breakdown of the BYOVD
 
 📄 **[SilverFox-BYOVD-Vs-Polymorphic-Malware-README.md](https://github.com/azdabat/Novel-Tradecraft-Research-Emerging-Attack-Ecosystems/blob/main/SilverFox-BYOVD-Vs-Polymorphic-Malware-README.md)**
 
+### 07 · Adversary-Informed Threat Hunting — MDE & Sentinel Playbook
+
+> *"Threat hunting is not searching for known bad. It is reasoning about what an attacker must have done, then finding the evidence that confirms or refutes it."*
+
+Most SOC teams hunt reactively — an alert fires, an analyst investigates. This playbook inverts that model. It operationalises **hypothesis-driven, adversary-informed hunting** built on the intersection of PEAK, TAHITI, and the Minimum Truth Detection Framework — where every hunt begins with a formally stated hypothesis anchored on what an attacker *must* have done, not what a vendor signature happened to catch.
+
+The playbook covers the complete hunt lifecycle, the methodology for building and validating hunt hypotheses, full telemetry mapping across MDE Advanced Hunting and Microsoft Sentinel, and **20 production-grade hunt rules** for 2026 — each demonstrated from both a red team (Empire / Atomic Red Team) and blue team perspective, with Azure Sentinel and MDE-aligned KQL. These are the techniques most SOC teams miss: DCSync via replication rights, WMI silent persistence, DCOM lateral movement, statistical C2 jitter detection, NTDS extraction via VSS, named pipe C2, and more.
+
+**Covers:** PEAK + TAHITI + Minimum Truth integrated methodology · Hypothesis construction framework · MDE vs Sentinel — when to use which · 20 adversary-informed hunt rules with Empire telemetry · Red team attack vectors with Atomic Red Team references · Hunt-to-production-rule promotion pipeline · Weekly hunt schedule · Escalation and output classification
+
+📄 **[Threat-Hunting-Playbook.md](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/blob/main/Threat%20Hunting%20And%20R%26D%20Docs/Threat-Hunting-Playbook.md)**
+
+---
+
 ---
 
 
