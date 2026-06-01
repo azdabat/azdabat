@@ -51,11 +51,11 @@ A five-layer methodology for building detections that survive real attacker beha
 
 ```mermaid
 flowchart TD
-    A["🔍 MINIMUM TRUTH\nThe unavoidable behavioural anchor\nRegistry write · Service spawn · Pipe creation\nOAuth grant · Task artefact"]:::truth
-    B["🔗 REINFORCEMENT\nConvergence signals that strengthen truth\nExecution + SMB · Autorun + primitive\nTask + TaskCache · Pipe + service correlation"]:::reinforce
-    C["🔇 NOISE SUPPRESSION\nEnterprise reality gates\nSafe vendor exclusions · Installer suppression\nBaseline process filters · Prevalence rarity weighting"]:::suppress
-    D["📊 CONFIDENCE SCORING\nTriage multiplier — not a trigger\nRare behaviour = higher priority\nWide prevalence = likely tooling\nConverged chains = critical"]:::score
-    E["📋 HUNTER DIRECTIVE\nSOC-ready embedded analyst guidance\nAttack class · Execution chain\nImmediate pivots · Blast radius expansion"]:::output
+    A["MINIMUM TRUTH\nUnavoidable behavioural anchor\nRegistry · Service · Pipe · OAuth · Task"]:::truth
+    B["REINFORCEMENT\nConvergence signals\nExecution + SMB · Task + TaskCache"]:::reinforce
+    C["NOISE SUPPRESSION\nEnterprise reality gates\nVendor exclusions · Baseline filters"]:::suppress
+    D["CONFIDENCE SCORING\nTriage multiplier\nRarity weighting · Chain convergence"]:::score
+    E["HUNTER DIRECTIVE\nEmbedded analyst guidance\nAttack class · Pivots · Blast radius"]:::output
 
     A --> B --> C --> D --> E
 
@@ -77,18 +77,18 @@ Why composites survive where traditional rules fail:
 
 ```mermaid
 flowchart LR
-    subgraph TRADITIONAL ["❌ Traditional Rule (Fragile)"]
+    subgraph TRADITIONAL ["❌ Traditional Rule — Fragile"]
         direction TB
         T1["Event A"] --> T2["Event B"] --> T3["Event C"] --> T4["ALERT"]
         T_note["Breaks if any event is\ndelayed, renamed, or jittered"]:::note
     end
 
-    subgraph COMPOSITE ["✅ Minimum Truth Composite (Resilient)"]
+    subgraph COMPOSITE ["✅ Minimum Truth Composite — Resilient"]
         direction TB
         C1["Minimum Truth\nAnchor"] --> C2["Reinforcement\nSignals"]
-        C2 --> C3["Noise Gates"]
+        C2 --> C3["Noise\nGates"]
         C3 --> C4["Scored\nHunter Output"]
-        C_note["Survives LOLBin evolution,\ntemporal deception, jitter"]:::notegreen
+        C_note["Survives LOLBin evolution\ntemporal deception · jitter"]:::notegreen
     end
 
     classDef note      fill:#3f1f1f,stroke:#DC2626,color:#FCA5A5,font-size:11px
@@ -177,6 +177,8 @@ This document delivers a complete offensive and defensive breakdown of the BYOVD
 
 📄 **[SilverFox-BYOVD-Vs-Polymorphic-Malware-README.md](https://github.com/azdabat/Novel-Tradecraft-Research-Emerging-Attack-Ecosystems/blob/main/SilverFox-BYOVD-Vs-Polymorphic-Malware-README.md)**
 
+---
+
 ### 07 · Adversary-Informed Threat Hunting — MDE & Sentinel Playbook
 
 > *"Threat hunting is not searching for known bad. It is reasoning about what an attacker must have done, then finding the evidence that confirms or refutes it."*
@@ -188,11 +190,6 @@ The playbook covers the complete hunt lifecycle, the methodology for building an
 **Covers:** PEAK + TAHITI + Minimum Truth integrated methodology · Hypothesis construction framework · MDE vs Sentinel — when to use which · 20 adversary-informed hunt rules with Empire telemetry · Red team attack vectors with Atomic Red Team references · Hunt-to-production-rule promotion pipeline · Weekly hunt schedule · Escalation and output classification
 
 📄 **[Threat-Hunting-Playbook.md](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/blob/main/Threat%20Hunting%20And%20R%26D%20Docs/Threat-Hunting-Playbook.md)**
-
----
-
----
-
 
 ---
 
@@ -254,27 +251,22 @@ The architecture response is a **hybrid sensor deployment**:
 
 ```mermaid
 flowchart TD
-    subgraph SENSOR ["Behavioural Composite Layer (Immediate Alerts)"]
-        S1["Single-Surface\nComposites"]
-        S2["High-confidence\nHunterDirectives"]
-        S1 --> S2
+    subgraph SENSOR ["Behavioural Composite Layer"]
+        S1["Single-Surface\nComposites"] --> S2["High-confidence\nHunterDirectives"]
     end
 
-    subgraph STITCH ["Incident Stitching Layer (Entity Correlation)"]
-        I1["Entity Keys\nDeviceName · AccountName"]
-        I2["Silent Correlation\nAcross Time Windows"]
-        I3["Narrative\nConvergence"]
-        I1 --> I2 --> I3
+    subgraph STITCH ["Incident Stitching Layer"]
+        I1["Entity Keys\nDevice · Account"] --> I2["Silent Correlation\nAcross Time"] --> I3["Narrative\nConvergence"]
     end
 
     subgraph OUTPUT ["Output Layer"]
-        O1["Immediate Alert\n(Choke Point Hit)"]
-        O2["Incident Context\n(Full Chain Assembled)"]
+        O1["Immediate Alert\nChoke Point Hit"]
+        O2["Incident Context\nFull Chain"]
     end
 
     SENSOR --> O1
     STITCH --> O2
-    O1 & O2 --> O3["Analyst Action\nwith Full Kill Chain Context"]
+    O1 & O2 --> O3["Analyst Action\nFull Kill Chain Context"]
 ```
 
 > Separating the **sensor architecture** from **chronological storytelling** achieves scale-safe efficiency. The composite fires on the choke point. The stitching engine assembles the narrative. The analyst receives both simultaneously.
