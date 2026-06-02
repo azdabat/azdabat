@@ -192,6 +192,25 @@ The playbook covers the complete hunt lifecycle, the methodology for building an
 📄 **[Threat-Hunting-Playbook.md](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/blob/main/Threat%20Hunting%20And%20R%26D%20Docs/Threat-Hunting-Playbook.md)**
 
 ---
+📄 **[Threat-Hunting-Playbook.md](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/blob/main/Threat%20Hunting%20And%20R%26D%20Docs/Threat-Hunting-Playbook.md)**
+
+---
+
+### 08 · Threat Hunting vs Detection Engineering — When to Hunt, When to Engineer, and Why the Difference Matters
+
+> *"A hunt is a question. A rule is a settled answer. Know which you're writing before you open your editor."*
+
+Threat hunting and detection engineering are two fundamentally different disciplines that feed each other — and conflating them produces rules that are too broad for production and hunts too narrow to find anything new. This document resolves that confusion with precision. It defines the exact decision boundary between the two modes, the formal pipeline for promoting a validated hunt finding into a production composite rule, and the methodology that sits beneath every rule in this framework.
+
+Built around the intersection of **PEAK** (Prepare → Execute → Act), **TAHITI** (Target → Approach → Hunting → Identify → Triage → Investigate), and the **Minimum Truth Detection Framework** — with the MTF as the content doctrine and PEAK/TAHITI as the operational scaffolding — this document answers the questions that most detection programmes never formally address: *What is the minimum evidence of truth? When does a hypothesis become a rule? How does novel threat intelligence get translated into production-grade detection?*
+
+Practical hunt playbooks cover the scenarios most defenders encounter but few have documented at this level of rigour: pre-encryption convergence hunting for LockBit-family ransomware, proactive permission and ACL exposure discovery, file share enumeration and exfiltration surface mapping, and credential file exposure hunts — including the `password.xls` class of misconfiguration that sits quietly on shares until an attacker with any foothold finds it first. A complete novel threat onboarding workflow demonstrates the full process end-to-end using InvisibleFerret (Void Dokkaebi, 2026) as the worked example.
+
+**Covers:** Core distinction between threat hunting and detection engineering with decision matrix · PEAK lifecycle applied to MTF with worked examples · TAHITI process model with per-phase KQL guidance · Hunt-to-composite promotion pipeline with gate criteria · Badge assignment decision logic (KQL ADX Validated · PEAK/TAHITI Aligned · Cousin Technique Doctrine · MDE · Sentinel · Novel Tradecraft) · LockBit pre-encryption convergence hunt · Permission and file share exposure hunts · Password file exposure hunt (`password.xls`, credential naming patterns) · Novel threat onboarding workflow from intelligence to composite rule · Rule quality rubric — eight checks before production promotion
+
+📄 **[Threat-Hunting-Vs-Detection-Engineering.md](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/blob/main/Threat-Hunting-Vs-Detection-Engineering.md)**
+
+---
 
 ## Current Detection Coverage
 
