@@ -253,7 +253,7 @@ This document covers the complete operational guide for the pipeline: the archit
 
 **Covers:** Pipeline architecture · ADX-Docker vs AnythingLLM validation · System prompt v4 design · Ten engineering rules rationale · Five reusable prompt templates · Master Empire kill chain prompt · Seven failure modes + correction prompts · ADX free cluster setup · ADX Docker local setup · KQL table creation commands · JSON telemetry ingestion guide · Production receipt standard · System prompt versioning · Quality calibration accumulation · Session management best practices
 
-📄 **[MTDF_Copilot_RD.md]([https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/MTDF%20AI%20Copilot%20%E2%80%94%20R%26D%20Master%20Documen.md])**
+📄 **[MTDF_Copilot_RD.md](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/MTDF%20AI%20Copilot%20%E2%80%94%20R%26D%20Master%20Documen.md)**
 
 
 ---
