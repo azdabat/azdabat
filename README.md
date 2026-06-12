@@ -237,7 +237,7 @@ Every threat is covered with a full investigation methodology: hypothesis format
 
 **Covers:** BYOVD kill chain hunting · EtherRAT beacon interval analysis · Kerberoasting RC4 volume detection · LOLBin parent-child chain mapping · Direct syscall bypass indicators · Supply chain CI/CD compromise · MFA fatigue pattern detection · PPL bypass and LSASS access sequences · Master timeline builder KQL · Blast radius assessment queries · IR decision trees · PEAK / TAHITI / MTDF framework alignment · Telemetry gap analysis · Hidden-in-legitimate-file technique catalogue
 
-📄 **[Advanced\_Threat\_Hunting\_RD.md](https://github.com/azdabat/Threat-Hunting/blob/main/Advanced_Threat_Hunting_RD.md)** · **[README.md](https://github.com/azdabat/Threat-Hunting/tree/main)**
+📄 **[Advanced\_Threat\_Hunting\_RD.md](https://github.com/azdabat/Threat-Hunting/blob/main/Advanced%20Threat%20Hunting.md)** · **[README.md](https://github.com/azdabat/Threat-Hunting/tree/main)**
 
 ---
 
