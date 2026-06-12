@@ -225,6 +225,21 @@ This document applies the Minimum Truth doctrine to the most critical AI-acceler
 📄 **[AI_Accelerated_Attack_Surface_Evolution.md](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/AI-Accelerated%20Attack%20Surface%20Evolution.md)**
 
 ---
+### 10 · Advanced Threat Hunting — Senior Analyst Reference: Detection, Investigation & Incident Response
+
+> *"Threat hunting is not the absence of alerts. It is the deliberate search for adversary behaviour that has not yet produced an alert — and the engineering of detections so that next time, it does."*
+
+Advanced threat hunting operates at the intersection of telemetry analysis, adversary tradecraft, and detection engineering. This repository documents a complete senior analyst reference for hunting and investigating the most evasion-resistant threats in the 2026 landscape — techniques that survive signature-based controls, bypass usermode EDR hooks, operate entirely within legitimate system infrastructure, or route command-and-control through public internet services that cannot be blocklisted.
+
+The threats covered represent the current frontier of EDR evasion: **SilverFox / ValleyRAT BYOVD** — where byte-flip polymorphism produces unique-hash, valid-signature kernel drivers per campaign, and a confirmed kernel load means the EDR is already blind before the alert fires; **EtherRAT blockchain C2** — where the command channel is the public Ethereum blockchain and no suspicious IP or domain ever exists; **Kerberoasting and AS-REP Roasting** — pure Active Directory protocol abuse with no malicious binary, no suspicious process, and no network anomaly detectable without identity telemetry; **Living-off-the-land fileless execution chains** including direct syscall bypass, process hollowing, and reflective injection hidden inside legitimate signed processes; **AI-assisted supply chain compromise** targeting CI/CD pipelines and package registries; and **MFA fatigue and PPL bypass** — two of the highest-impact, lowest-visibility techniques active in enterprise environments in 2026.
+
+Every threat is covered with a full investigation methodology: hypothesis formation, MDE Advanced Hunting and Microsoft Sentinel KQL queries, Mermaid attack chain diagrams, cousin technique mapping, attack timeline reconstruction, blast radius assessment, and the complete senior incident response lifecycle from triage to detection engineering. The repository also includes a comprehensive README covering PEAK and TAHITI hunt framework alignment, the MTDF minimum truth doctrine applied to hunting, telemetry gap analysis, entity key pivot methodology, and the detection improvement loop that converts every confirmed incident into a production composite rule.
+
+**Covers:** BYOVD kill chain hunting · EtherRAT beacon interval analysis · Kerberoasting RC4 volume detection · LOLBin parent-child chain mapping · Direct syscall bypass indicators · Supply chain CI/CD compromise · MFA fatigue pattern detection · PPL bypass and LSASS access sequences · Master timeline builder KQL · Blast radius assessment queries · IR decision trees · PEAK / TAHITI / MTDF framework alignment · Telemetry gap analysis · Hidden-in-legitimate-file technique catalogue
+
+📄 **[Advanced\_Threat\_Hunting\_RD.md](https://github.com/azdabat/Threat-Hunting/blob/main/Advanced_Threat_Hunting_RD.md)** · **[README.md](https://github.com/azdabat/Threat-Hunting/tree/main)**
+
+---
 
 ## 🗺️ God Mode Composite Roadmap
 
