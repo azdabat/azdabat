@@ -212,6 +212,18 @@ Practical hunt playbooks cover the scenarios most defenders encounter but few ha
 
 ---
 
+### 09 · AI-Accelerated Attack Surface Evolution — Composite Behavioural Detection in the Age of Polymorphic Malware
+
+> *"The binary changes. The hash changes. The signature mutates. But to achieve the operational goal — the attacker must still load the driver, touch LSASS, or establish the pipe. That behavioural truth is what we anchor on. Everything else is noise."*
+
+Signature-based detection is built on a premise AI has now structurally invalidated: that knowing what an attack *looks like* is sufficient to detect it. An LLM can generate a unique, syntactically valid, functionally equivalent payload variant in seconds — targeting your specific detection rules, rotating obfuscation patterns, and automating the evasion iteration cycle that previously took skilled operators days. **Hash blocklists cannot keep pace. Byte-flip polymorphism preserves valid driver signatures while defeating every blocklist simultaneously. The only viable anchor is what the attack must *do*.**
+
+This document applies the Minimum Truth doctrine to the most critical AI-accelerated attack classes: **SilverFox / ValleyRAT BYOVD** — a Chinese-nexus campaign using byte-flip mutation to produce unique-hash, valid-signature kernel driver variants per campaign; **PowerShell Empire AI-assisted stagers** with automated AMSI bypass and obfuscation rotation; **WMI Fileless Persistence** exploiting the DLL load substrate that survives every command-line evasion; and **OAuth Consent Abuse** where AI generates optimised phishing lures and selects high-risk permission scopes calibrated to evade detection thresholds. For each chain, the document provides a three-tier composite detection architecture — hash-invariant, signature-invariant, binary-invariant — anchored on the behavioural sequence that AI cannot mutate away.
+
+**Covers:** AI capability shifts in offensive security · Byte-flip polymorphism vs classical mutation · Command-line execution evasion timeline (2015–2026) · SilverFox / ValleyRAT three-tier BYOVD detection (Tier 1 atomic → Tier 2 chain → Tier 3 full kill-chain) · Empire PowerShell stager composite · WMI fileless scrcons.exe substrate sensor · OAuth consent abuse with production bug fixes applied · STRIDE threat modelling methodology alignment · PEAK / NIST CSF / OWASP LLM Top 10 framework mapping · Cousin technique coverage table with AI evasion resistance analysis
+
+📄 **[AI_Accelerated_Attack_Surface_Evolution.md](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/AI-Accelerated%20Attack%20Surface%20Evolution.md)**
+
 ---
 
 ## 🗺️ God Mode Composite Roadmap
