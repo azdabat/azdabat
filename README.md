@@ -241,6 +241,23 @@ Every threat is covered with a full investigation methodology: hypothesis format
 
 ---
 
+### 11 · MTDF AI Copilot — Agentic Detection Engineering Pipeline: Architecture, Implementation & Operational Guide
+
+> *"The Copilot does not replace the detection engineer. It accelerates them — enforcing doctrine, preventing implementation bugs, and generating schema-precise rule scaffolds that the engineer validates, calibrates, and commits."*
+
+Detection engineering at scale requires simultaneous mastery of five domains: schema precision, KQL engine behaviour, detection doctrine, adversary tradecraft, and operational constraints. Without tooling, even experienced engineers produce rules that are logically correct but technically flawed, or technically correct but doctrinally wrong. The five production bug classes documented in the MTDF engineering errors reference were all found in rules written without automated doctrine enforcement. This R&D document is the master reference for the MTDF AI Copilot — an agentic LLM detection engineering pipeline that solves this problem end-to-end.
+
+The pipeline runs **AnythingLLM desktop** as the orchestration and RAG layer, backed by **Claude Sonnet 4.6 via the Anthropic API** at temperature=0 for deterministic output, with a nine-section v4 system prompt that enforces the complete MTDF doctrine as non-negotiable operating constraints. The workspace carries the full MDE and Sentinel schema reference, all five skeleton templates, Empire C2 attack telemetry as RAG-accessible signal documents, and validated production rules as quality calibration examples. The model cannot generate a rule without first declaring the anchoring strategy, selecting the correct skeleton, stating the minimum truth anchor, and documenting the minimum fire path — and cannot skip any of the ten production engineering rules derived from the systematic bug review.
+
+This document covers the complete operational guide for the pipeline: the architecture and component decisions, why Ollama local models were abandoned in favour of the Claude API, the full v4 system prompt design rationale section by section, workspace configuration, and five reusable prompt templates for every rule generation scenario — Intent-First, Substrate-First, Sentinel, multi-platform, and the master Empire kill chain prompt that generates nine production-candidate rules in sequence. It documents all seven failure modes with correction prompts that can be sent immediately when a violation is detected, and explains exactly how to validate generated rules — the answer to whether AnythingLLM can test rules against injested Empire telemetry (it cannot — it is a RAG system, not a query engine), and the full step-by-step guide for ADX-Docker validation covering both the Azure free cluster path and the fully local Docker path, including table creation commands, JSON ingestion mapping, rule adaptation for static telemetry, and what a valid production receipt looks like. The document closes with the incremental fine-tuning model — how validated rules are fed back into the workspace as quality examples, how the system prompt is versioned as the rule library grows, and the complete eleven-step workflow from prompt to GitHub commit.
+
+**Covers:** Pipeline architecture · ADX-Docker vs AnythingLLM validation · System prompt v4 design · Ten engineering rules rationale · Five reusable prompt templates · Master Empire kill chain prompt · Seven failure modes + correction prompts · ADX free cluster setup · ADX Docker local setup · KQL table creation commands · JSON telemetry ingestion guide · Production receipt standard · System prompt versioning · Quality calibration accumulation · Session management best practices
+
+📄 **[MTDF_Copilot_RD.md]([https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/MTDF%20AI%20Copilot%20%E2%80%94%20R%26D%20Master%20Documen.md])**
+
+
+---
+
 ## 🗺️ God Mode Composite Roadmap
 
 **[→ OPEN INTERACTIVE ROADMAP](https://azdabat.github.io/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/index.html)**
