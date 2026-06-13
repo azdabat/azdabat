@@ -258,6 +258,23 @@ This document covers the complete operational guide for the pipeline: the archit
 
 ---
 
+### 11 · MTDF AI Copilot — Agentic Detection Engineering Pipeline: Architecture, Implementation & Operational Guide
+
+> *"The Copilot does not replace the detection engineer. It accelerates them — enforcing doctrine, preventing implementation bugs, classifying rule architecture before generating, and producing scaffolds that the engineer validates, calibrates, and commits."*
+
+Detection engineering at scale requires simultaneous mastery of five domains: schema precision, KQL engine behaviour, detection doctrine, adversary tradecraft, and operational constraints. Without tooling, even experienced engineers produce rules that are logically correct but technically flawed, or architecturally wrong for their operational purpose. The MTDF AI Copilot solves this by operating as a doctrine-enforcement and classification engine built on AnythingLLM desktop, Claude Sonnet 4.6 via the Anthropic API at temperature=0, and a ten-section v5 system prompt with a mandatory rule classification protocol that runs before a single line of KQL is written.
+
+The classification protocol is the architectural core of v5. Five questions are asked before every rule generation — scope, noise domain, fidelity requirement, telemetry availability, and operational context — each with a clear explanation of why it is being asked and what the answer means architecturally. The answers determine which of five architectures is declared: Composite Sensor (base 55, threshold 75, HunterDirective), Router Rule (base 0, threshold 30, RoutingDirective), Composite Pack, Hunt Query, or Router + Composite Pair. The ingress tool transfer case study — Hunt Pack 04 covering bitsadmin, certutil, curl, and PowerShell — is the canonical example of why a router rule is correct when multiple techniques have different noise domains, and why the T1197 BITSAdmin composite sensor must be built separately and retire bitsadmin from the router once ADX-validated.
+
+The R&D document covers the full pipeline: why Ollama local models were abandoned, the v4 to v5 system prompt evolution, the workspace configuration with Empire telemetry as RAG documents, five reusable prompt templates for every rule generation scenario, eight failure modes with precise correction prompts, the definitive answer on why AnythingLLM cannot test KQL rules against ingested telemetry, step-by-step ADX validation via both Azure free cluster and local Docker including table creation commands and telemetry ingestion mapping, the incremental fine-tuning model as validated rules accumulate as workspace quality examples, and the complete eleven-step workflow from classification to GitHub commit.
+
+**Covers:** Classification protocol · Router vs Composite architecture decision · Five reusable prompt templates · Eight failure modes + correction prompts · ADX-Docker validation step-by-step · AnythingLLM workspace configuration · Ten engineering rules rationale · Incremental fine-tuning model · Session management · Version history v1–v5
+
+📄 **[MTDF_Copilot_RD_v2.md](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/Router%20Rule%20-%20R%26D%20Master%20Document.md)**
+****
+
+---
+
 ## 🗺️ God Mode Composite Roadmap
 
 **[→ OPEN INTERACTIVE ROADMAP](https://azdabat.github.io/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/index.html)**
