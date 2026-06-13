@@ -483,7 +483,7 @@ The document covers the two-rule-type architecture in full: the scoring model di
 
 **Covers:** Router Rule doctrine · Two-rule-type architecture · Ingress tool transfer case study · Decomposition tracker · Routing directive vs Hunter directive · Scoring architecture difference (base 0 vs base 55) · Validity criteria · Router + Composite interaction model · Coverage debt vs coverage architecture · Retirement workflow
 
-📄 **[Router Rules Inclusive Framework.md](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/Router%20Rules%20Master.md#part-v--router-rules-vs-composite-sensors)**
+📄 **[Router Rules Inclusive Framework.md](https://github.com/azdabat/Router-Rule-Franework)**
 
 
 ---
