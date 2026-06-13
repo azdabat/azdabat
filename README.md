@@ -275,6 +275,23 @@ The R&D document covers the full pipeline: why Ollama local models were abandone
 
 ---
 
+### 12 · Router Rules — How Sensors Become Incidents: The Attack Narrative Pipeline
+
+> *"Router rules detect intent. Ecosystem composites confirm truth. A router rule that is never retired is coverage debt, not architecture."*
+
+In production detection estates, a second class of rules operates alongside composite sensors — rules that exist not to confirm a specific minimum truth, but to cast a wide surface across multiple techniques that share the same adversary goal while having fundamentally different noise domains. These are Router Rules: the architectural mechanism that prevents the two worst outcomes in enterprise detection engineering — the monolithic rule that combines incompatible techniques and cannot be tuned without creating blind spots, and the coverage gap that exists while dedicated composites are being built and validated.
+
+This document is the complete reference for the Router Rule doctrine within the Minimum Truth Detection Framework. It establishes why the ingress tool transfer case study — bitsadmin, certutil, curl, and PowerShell grouped together in Hunt Pack 04 — is the canonical example of a valid router rule. Each tool operates in a completely different enterprise noise domain: bitsadmin in SCCM and Windows Update contexts, certutil in developer PKI tooling, curl in DevOps CI/CD pipelines. Combining them in a composite sensor produces a rule that cannot suppress SCCM false positives without creating blind spots for developer abuse, and cannot tune for DevOps noise without hiding the most suspicious signals. The router rule covers all four with a base score of zero, a threshold of 30, and a RoutingDirective that tells the analyst which dedicated composite to run per signal type — with a live decomposition tracker documenting when each technique should be retired from the router as its composite is ADX-validated.
+
+The document covers the two-rule-type architecture in full: the scoring model difference between base 0 (router) and base 55 (composite), the interaction model showing how a router and composite work as a pipeline rather than competitors, the complete router rule template with decomposition tracker, the validity criteria defining when a router rule is architecturally appropriate and when it is not, and the sequence diagram showing how router breadth and composite depth stitch together at the incident layer via entity keys.
+
+**Covers:** Router Rule doctrine · Two-rule-type architecture · Ingress tool transfer case study · Decomposition tracker · Routing directive vs Hunter directive · Scoring architecture difference (base 0 vs base 55) · Validity criteria · Router + Composite interaction model · Coverage debt vs coverage architecture · Retirement workflow
+
+📄 **[Router Rules Inclusive Framework.md](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/Router%20Rules%20Master.md#part-v--router-rules-vs-composite-sensors)**
+
+
+---
+
 ## 🗺️ God Mode Composite Roadmap
 
 **[→ OPEN INTERACTIVE ROADMAP](https://azdabat.github.io/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/index.html)**
