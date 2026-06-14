@@ -670,6 +670,26 @@ The document covers the two-rule-type architecture in full: the scoring model di
 
 ---
 
+### 13 · MTDF AI Copilot — Agentic Detection Engineering Pipeline: The Complete Empire LLM Framework
+
+> *"The Copilot does not replace the detection engineer. It accelerates them — enforcing doctrine, classifying rule architecture before generating, asking every question the engineer should ask but rarely has time to, and producing scaffolds that the engineer validates, calibrates, and commits."*
+
+The Empire LLM Framework is the operational AI infrastructure that powers the Minimum Truth Detection Framework. It consists of two connected AnythingLLM workspaces running Claude Sonnet 4.6 at temperature=0 via the Anthropic API — one dedicated to structured threat hunting under the PEAK/TAHITI methodology, one dedicated to production detection engineering under the full MTDF three-layer inference spectrum. Together they cover the complete detection lifecycle: from initial threat hypothesis through validated hypothesis, through primitive collector, through router rule, through ADX-validated composite sensor, to production deployment.
+
+The Engineering Workspace (Empire_LLM_Framework) runs the MTDF v6 system prompt — 815 lines covering seven detection architectures, six skeleton templates, ten non-negotiable engineering rules, the cousin technique doctrine, the Empire C2 telemetry context, full MDE and Sentinel schema reference, and the complete three-layer classification protocol. Before generating a single line of KQL, the Copilot runs five classification questions — minimum observable fact, inference depth, noise domain, existing coverage status, and output action — then declares the architecture, skeleton, base score, threshold, inference depth, lifecycle, and decomposition tracker update requirements in a formal pre-flight declaration. The three non-negotiable scoring rules (Primitive: no score/no threshold/no summarise; Router Rule: base 0/threshold ≤ 30; Composite Sensor: base 55/threshold ≥ 75) are enforced throughout every output.
+
+The Hunt Workspace (MTDF_Hunt_PEAK_TAHITI) runs a dedicated 799-line system prompt structured around the PEAK framework (Pattern/Entity/Anomaly hunt types) and the TAHITI six-phase hunt lifecycle (Trigger → Hypothesis → Data → Analysis → Iterate → Outcome). Before generating any hunt query, the Copilot presents a six-question Hunt Intake Form — trigger classification, technique specification, falsifiable hypothesis construction, telemetry confirmation, scope definition, and promotion intent — then outputs a Hunt Brief and generates Architecture 4 Hunt Queries with full analyst notes, noise indicators, pivot recommendations, and promotion triggers. At TAHITI T6 (True Positive outcome), the Copilot generates a formal Promotion Package with the five engineering classification questions pre-answered from the hunt findings, the noise profile for the composite suppression model, and the recommended MTDF architecture — designed to be pasted directly into the Engineering Workspace as opening context.
+
+The R&D document is the bible for the complete framework. It covers why two workspaces are better than one, the three-layer inference spectrum with all diagrams, the complete architecture decision flowchart, the noise domain decision table, both workspace configurations with RAG document lists, the promotion pipeline from hunt finding to production deployment, and a full end-to-end simulated scenario: a ransomware TTP from threat intelligence report through PEAK Entity hunt, TAHITI six-phase lifecycle, True Positive finding, Promotion Package generation, Engineering Workspace pre-flight declaration, Primitive Collector KQL, production Composite Sensor KQL with four-phase MTDF structure and full scoring decision table, router rule decomposition tracker update, and the final pipeline diagram showing how all three layers stitch at the incident layer via entity keys.
+
+**Covers:** Two-workspace architecture · PEAK/TAHITI hunt methodology · Three-layer inference spectrum (Primitive/Router/Composite) · Seven detection architectures · Six skeleton templates · Five classification questions · Six-question hunt intake form · Hunt-to-composite promotion pipeline · Promotion Package format · Full end-to-end simulated scenario with KQL · Noise domain decision table · ADX validation workflow · Workspace configuration · Version history v1–v6
+
+📄 **[MTDF AI Copilot — R&D Master Document v2.md](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/MTDF%20AI%20Copilot%20%E2%80%94%20R%26D%20Master%20Document%20v2.md)**
+
+
+
+---
+
 ## 🗺️ God Mode Composite Roadmap
 
 **[→ OPEN INTERACTIVE ROADMAP](https://azdabat.github.io/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/index.html)**
