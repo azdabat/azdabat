@@ -570,7 +570,7 @@ The playbook covers the complete hunt lifecycle, the methodology for building an
 📄 **[Threat-Hunting-Playbook.md](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/blob/main/Threat%20Hunting%20And%20R%26D%20Docs/Threat-Hunting-Playbook.md)**
 
 ---
-📄 **[Threat-Hunting-Playbook.md](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/blob/main/Threat%20Hunting%20And%20R%26D%20Docs/Threat-Hunting-Playbook.md)**
+📄 **[Threat-Hunting-Roadmap](https://azdabat.github.io/Threat-Hunting/roadmap/)**
 
 ---
 
