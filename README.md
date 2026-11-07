@@ -203,23 +203,15 @@ Signature-based detection is built on a premise AI has now structurally invalida
 Advanced threat hunting operates at the intersection of telemetry analysis, adversary tradecraft, and detection engineering.  
 📄 [Read](https://github.com/azdabat/Threat-Hunting/blob/main/Advanced%20Threat%20Hunting.md) · [Repo](https://github.com/azdabat/Threat-Hunting/tree/main)
 
-### 11 · MTDF AI Copilot — Agentic Detection Engineering Pipeline: Architecture, Implementation & Operational Guide (v4)
-The pipeline runs **AnythingLLM desktop** as the orchestration and RAG layer, backed by **Claude Sonnet 4.6 via the Anthropic API** at temperature=0 for deterministic output, with a nine-section v4 system prompt that enforces the complete MTDF doctrine as non-negotiable operating constraints.  
-📄 [Read](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/MTDF%20AI%20Copilot%20%E2%80%94%20R%26D%20Master%20Documen.md)
-
-### 12 · MTDF AI Copilot — Agentic Detection Engineering Pipeline: Architecture, Implementation & Operational Guide (v5)
-Five questions are asked before every rule generation — scope, noise domain, fidelity requirement, telemetry availability, and operational context — each with a clear explanation of why it is being asked and what the answer means architecturally.  
-📄 [Read](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/Router%20Rule%20-%20R%26D%20Master%20Document.md)
-
-### 13 · Router Rules — How Sensors Become Incidents: The Attack Narrative Pipeline
+### 11 · Router Rules — How Sensors Become Incidents: The Attack Narrative Pipeline
 This document is the complete reference for the Router Rule doctrine within the Minimum Truth Detection Framework.  
 📄 [Router Rule Framework repo](https://github.com/azdabat/Router-Rule-Franework)
 
-### 14 · MTDF AI Copilot — Agentic Detection Engineering Pipeline: The Complete Empire LLM Framework (v6)
+### 12 · MTDF AI Copilot — Agentic Detection Engineering Pipeline: The Complete Empire LLM Framework
 The Engineering Workspace (Empire_LLM_Framework) runs the MTDF v6 system prompt — 815 lines covering seven detection architectures, six skeleton templates, ten non-negotiable engineering rules, the cousin technique doctrine, the Empire C2 telemetry context, full MDE and Sentinel schema reference, and the complete three-layer classification protocol.  
 📄 [Read](https://github.com/azdabat/-AI-LLM-Autonomous-Systems/blob/main/MTDF%20AI%20Copilot%20%E2%80%94%20R%26D%20Master%20Document%20v2.md)
 
-### 15 · Node.js Child Process Abuse — Tradecraft Study, Attack Analysis & Full MTDF Detection Architecture
+### 13 · Node.js Child Process Abuse — Tradecraft Study, Attack Analysis & Full MTDF Detection Architecture
 This study examines how adversaries identify Node.js backends, exploit them through five distinct code execution vectors, and weaponise the `child_process` module to deliver reverse shells and remote access payloads across both Linux and Windows environments.  
 📄 [Read](https://github.com/azdabat/Novel-Tradecraft-Research-Emerging-Attack-Ecosystems/blob/main/Node.js%20Child%20Process%20Abuse.md)
 
