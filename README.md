@@ -18,8 +18,7 @@
 [![Microsoft Sentinel](https://img.shields.io/badge/Microsoft%20Sentinel-KQL%20Detections-00BCF2?style=flat-square&logo=microsoftazure&logoColor=white)](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules)
 [![MDE](https://img.shields.io/badge/Defender%20for%20Endpoint-Composite%20Hunts-00A4EF?style=flat-square&logo=windows&logoColor=white)](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules)
 [![Purple Team](https://img.shields.io/badge/Purple%20Team-R%26D%20Playbooks-7B2FBE?style=flat-square)](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/tree/main/Threat%20Hunting%20And%20R%26D%20Docs)
-[![Status](https://img.shields.io/badge/Status-Active%20Research-brightgreen?style=flat-square)](https://github.com/azdabat)
-
+[![Detection-as-Code](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/actions/workflows/dac_pipeline.yml/badge.svg)](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/actions/workflows/dac_pipeline.yml)
 </div>
 
 ---
