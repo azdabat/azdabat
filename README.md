@@ -138,7 +138,7 @@ DeviceImageLoadEvents
 **ADX-Docker validation run (lab telemetry):**
 
 ![WMI Fileless ADX Results](https://raw.githubusercontent.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/main/WMI_ECOSYSTEM_VALIDATION/WMI%20Fileless%20ADX%20Results.jpg)
-
+[![Detection-as-Code](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/actions/workflows/dac_pipeline.yml/badge.svg)](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/actions/workflows/dac_pipeline.yml)
 📄 [Full rule](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/blob/main/WMI_ECOSYSTEM_VALIDATION/WMI_Fileless_Consumer_Execution_Scrcons_Substrate.KQL) · [WMI ecosystem & cousin rules](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/tree/main/WMI_ECOSYSTEM_VALIDATION) · [All ADX test receipts](https://github.com/azdabat/Minimum-Truth-Detection-Framework-ADX-Validated-Composite-Rules/tree/main/ADX-Docker-Tests)
 
 ---
